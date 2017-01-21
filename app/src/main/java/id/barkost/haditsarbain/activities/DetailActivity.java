@@ -45,6 +45,7 @@ public class DetailActivity extends AppCompatActivity {
         txArabic.setTypeface(face);
         txHadits.setTypeface(face);
 
+
         myDb = new DatabaseHelper(this);
         Cursor menu = myDb.select_single_data(String.valueOf(sessionId));
         if (menu.getCount() == 0) {

@@ -21,6 +21,10 @@
         <activity
             android:name=".activities.DetailActivity"
             android:label="@string/title_activity_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.HaditsActivity"
+            android:label="@string/title_activity_hadits"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

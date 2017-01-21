@@ -49,24 +49,18 @@ public class MainActivity extends AppCompatActivity {
 //            prefs.edit().putBoolean("firstLaunch", false).commit();
 
         myDB.delete();
-            Resources res = getResources();
-            String[] id = res.getStringArray(R.array.id);
-            String[] judul_latin = res.getStringArray(R.array.judul_latin);
-            String[] judul_arabic = res.getStringArray(R.array.judul_arabic);
-            String[] isi_hadits = res.getStringArray(R.array.isi_hadits);
-//            String[] isi_hadits = {
-//                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
-//                    "11", "12", "13", "14", "15", "16", "17", "18", "19", "20",
-//                    "21", "22", "23", "24", "25", "26", "27", "28", "29", "30",
-//                    "31", "32", "33", "34", "35", "36", "37", "38", "39", "40"
-//            };
-            String[] terjemah_hadits = res.getStringArray(R.array.terjemah_hadits);
-            String[] rowi_hadits = res.getStringArray(R.array.footnote_hadits);
-            String[] faidah_hadits = res.getStringArray(R.array.faidah_hadits);
-            int Length = id.length;
-            for (int i = 0; i < Length; i++) {
-                myDB.insert_table(Integer.parseInt(id[i]), judul_latin[i], judul_arabic[i], isi_hadits[i], terjemah_hadits[i], rowi_hadits[i], faidah_hadits[i]);
-            }
+
+        String[] id = {"1"};
+        String[] judul_latin = {"Amal Tergantung Niat"};
+        String[] judul_arabic = {"الحــديث الأول"};
+        String[] isi_hadits = {"عَنْ أَمِيْرِ الْمُؤْمِنِيْنَ أَبِيْ حَفْصٍ عُمَرَ بْنِ الْخَطَّابِ رَضِيَ اللهُ عَنْهُ قَالَ: سَمِعْتُ رَسُوْلَ اللهِ صلى الله عليه وسلم يَقُوْلُ: إِنَّمَا اْلأَعْمَالُ بِالنِّيَّاتِ وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى. فَمَنْ كَانَتْ هِجْرَتُهُ إِلَى اللهِ وَرَسُوْلِهِ فَهِجْرَتُهُ إِلَى اللهِ وَرَسُوْلِهِ، وَمَنْ كَانَتْ هِجْرَتُهُ لِدُنْيَا يُصِيْبُهَا أَوْ امْرَأَةٍ يَنْكِحُهَا فَهِجْرَتُهُ إِلَى مَا هَاجَرَ إِلَيْهِ. [رواه إماما المحدثين أبو عبد الله محمد بن إسماعيل بن إبراهيم بن المغيرة بن بردزبة البخاري وأبو الحسين مسلم بن الحجاج بن مسلم القشيري النيسابوري في صحيحيهما اللذين]"};
+        String[] terjemah_hadits = {"Dari Amirul Mu’minin, Abi Hafs Umar bin Al Khattab radhiallahuanhu, dia berkata, \"Saya mendengar Rasulullah shallahu`alaihi wa sallam bersabda: Sesungguhnya setiap perbuatan tergantung niatnya. Dan sesungguhnya setiap orang (akan dibalas) berdasarkan apa yang dia niatkan. Siapa yang hijrahnya karena (ingin mendapatkan keridhaan) Allah dan Rasul-Nya, maka hijrahnya kepada (keridhaan) Allah dan Rasul-Nya. Dan siapa yang hijrahnya karena menginginkan kehidupan yang layak di dunia atau karena wanita yang ingin dinikahinya maka hijrahnya (akan bernilai sebagaimana) yang dia niatkan."};
+        String[] rowi_hadits = {"Riwayat dua imam hadits, Abu Abdullah Muhammad bin Isma’il bin Ibrahim bin Al Mughirah bin Bardizbah Al Bukhari dan Abu Al Husain, Muslim bin Al Hajjaj bin Muslim Al Qusyairi An Naisaaburi di dalam dua kitab Shahih, yang merupakan kitab yang paling shahih yang pernah dikarang."};
+        String[] faidah_hadits = {"1. Niat merupakan syarat layak/diterima atau tidaknya amal perbuatan, dan amal ibadah tidak akan menghasilkankan pahala kecuali berdasarkan niat (karena Allah ta’ala)."};
+        int Length = id.length;
+        for (int i = 0; i < Length; i++) {
+            myDB.insert_table(Integer.parseInt(id[i]), judul_latin[i], judul_arabic[i], isi_hadits[i], terjemah_hadits[i], rowi_hadits[i], faidah_hadits[i]);
+        }
 //        }
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
@@ -91,7 +85,11 @@ public class MainActivity extends AppCompatActivity {
 //                }
 //                Toast.makeText(getApplicationContext(), asd, Toast.LENGTH_SHORT).show();
 
-                Intent i = new Intent(MainActivity.this, DetailActivity.class);
+//                Intent i = new Intent(MainActivity.this, DetailActivity.class);
+//                i.putExtra("sessionId", position + 1);
+//                startActivity(i);
+
+                Intent i = new Intent(MainActivity.this, HaditsActivity.class);
                 i.putExtra("sessionId", position + 1);
                 startActivity(i);
             }
@@ -117,19 +115,14 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
