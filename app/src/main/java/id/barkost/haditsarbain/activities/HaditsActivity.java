@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.sufficientlysecure.htmltextview.HtmlResImageGetter;
 import org.sufficientlysecure.htmltextview.HtmlTextView;
@@ -66,7 +67,7 @@ public class HaditsActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_hadits, menu);
         return true;
     }
 
@@ -74,8 +75,10 @@ public class HaditsActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.action_share) {
+            Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.action_bookmark) {
+            Toast.makeText(this, "Bookmark", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
     }

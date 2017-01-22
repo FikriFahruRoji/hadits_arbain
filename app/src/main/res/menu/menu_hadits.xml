@@ -2,9 +2,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="id.barkost.haditsarbain.activities.HaditsActivity">
+
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:id="@+id/action_bookmark"
+        android:icon="@drawable/bookmark"
+        app:showAsAction="always"
+        android:orderInCategory="1"
+        android:title="@string/action_bookmark" />
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/share"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="2"
+        android:title="@string/action_share" />
 </menu>

@@ -602,4 +602,6 @@
     <string name="hadits">Hadits :</string>
     <string name="terjemah">Terjemah :</string>
     <string name="faedah">Faedah Hadits :</string>
+    <string name="action_share">Share</string>
+    <string name="action_bookmark">Bookmark</string>
 </resources>
