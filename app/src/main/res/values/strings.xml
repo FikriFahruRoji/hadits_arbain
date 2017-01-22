@@ -605,4 +605,6 @@
     <string name="faedah">Faedah Hadits :</string>
     <string name="action_share">Share</string>
     <string name="action_bookmark">Bookmark</string>
+    <string name="hilangkan_hadits">-</string>
+    <string name="tampilkan_hadits">+</string>
 </resources>

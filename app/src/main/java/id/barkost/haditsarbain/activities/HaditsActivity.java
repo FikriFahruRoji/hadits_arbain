@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,7 +25,8 @@ public class HaditsActivity extends AppCompatActivity {
 
     public static int id = 0;
     private DatabaseHelper myDb;
-    private TextView txArabic, txHadits, txTerjemah, txNo, txLatin, txFootnote;
+    private TextView txHadits, txTerjemah, txNo, txLatin, txFootnote;
+    private ImageView visibleHadits;
     private Button mediaPlay, mediaNext, mediaPrev, mediaRepeat;
     private Toolbar toolbar;
 
@@ -57,6 +59,20 @@ public class HaditsActivity extends AppCompatActivity {
         txHadits = (TextView) findViewById(R.id.tx_det_hadits);
         txTerjemah = (TextView) findViewById(R.id.tx_det_terjemah);
         txFootnote = (TextView) findViewById(R.id.tv_det_footnote);
+        visibleHadits = (ImageView) findViewById(R.id.img_visible);
+
+        visibleHadits.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (visibleHadits.getDrawable().getConstantState() == getResources().getDrawable( R.drawable.text_show).getConstantState()) {
+                    visibleHadits.setImageDrawable(getResources().getDrawable(R.drawable.text_hide));
+                    txHadits.setVisibility(View.GONE);
+                } else {
+                    visibleHadits.setImageDrawable(getResources().getDrawable(R.drawable.text_show));
+                    txHadits.setVisibility(View.VISIBLE);
+                }
+            }
+        });
 
         mediaNext = (Button) findViewById(R.id.btn_media_next);
         mediaNext.setOnClickListener(new View.OnClickListener() {
