@@ -8,6 +8,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Html;
+import android.text.Spanned;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,8 +24,7 @@ public class HaditsActivity extends AppCompatActivity {
 
     public static String KEY_ITEM = "item";
     private DatabaseHelper myDb;
-    private HtmlTextView txTerjemah;
-    private TextView txArabic, txHadits, txNo, txLatin, txFootnote, txFaidah;
+    private TextView txArabic, txHadits, txTerjemah, txNo, txLatin, txFootnote;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,9 +41,8 @@ public class HaditsActivity extends AppCompatActivity {
         txNo = (TextView) findViewById(R.id.tv_det_no);
         txLatin = (TextView) findViewById(R.id.tv_det_latin);
         txHadits = (TextView) findViewById(R.id.tx_det_hadits);
-        txTerjemah = (HtmlTextView) findViewById(R.id.tx_det_terjemah);
+        txTerjemah = (TextView) findViewById(R.id.tx_det_terjemah);
         txFootnote = (TextView) findViewById(R.id.tv_det_footnote);
-        txFaidah = (TextView) findViewById(R.id.tv_det_faidah);
 
         Typeface face;
         face = Typeface.createFromAsset(getAssets(), "font.otf");
@@ -62,7 +61,6 @@ public class HaditsActivity extends AppCompatActivity {
             txHadits.setText(Html.fromHtml(menu.getString(3)));
             txTerjemah.setText(Html.fromHtml(menu.getString(4)));
             txFootnote.setText(Html.fromHtml(menu.getString(5)));
-            txFaidah.setText(Html.fromHtml(menu.getString(6)));
         }
     }
 
