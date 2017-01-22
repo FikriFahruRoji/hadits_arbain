@@ -44,11 +44,9 @@ public class MainActivity extends AppCompatActivity {
 
         myDB = new DatabaseHelper(this);
 
-//        SharedPreferences prefs = getPreferences(Context.MODE_PRIVATE);
-//        if (prefs.getBoolean("firstLaunch", true)) {
-//            prefs.edit().putBoolean("firstLaunch", false).commit();
-
-        myDB.delete();
+        SharedPreferences prefs = getPreferences(Context.MODE_PRIVATE);
+        if (prefs.getBoolean("firstLaunch", true)) {
+            prefs.edit().putBoolean("firstLaunch", false).commit();
             Resources res = getResources();
             String[] id = res.getStringArray(R.array.id);
             String[] judul_latin = res.getStringArray(R.array.judul_latin);
@@ -60,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             for (int i = 0; i < Length; i++) {
                 myDB.insert_table(Integer.parseInt(id[i]), judul_latin[i], judul_arabic[i], isi_hadits[i], terjemah_hadits[i], rowi_hadits[i]);
             }
-//        }
+        }
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         mAdapter = new MenuAdapter(menuList);
@@ -73,23 +71,8 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getApplicationContext(), recyclerView, new RecyclerTouchListener.ClickListener() {
             @Override
             public void onClick(View view, int position) {
-//                String asd = null;
-//                Cursor menu = myDB.select_single_data(String.valueOf(position + 1));
-//                if (menu.getCount() == 0) {
-//                    return;
-//                }
-//
-//                while (menu.moveToNext()) {
-//                    asd = Integer.toString(menu.getInt(0)) + "\n" +menu.getString(1) + "\n" +menu.getString(2) + "\n" +menu.getString(3) + "\n" +menu.getString(4) + "\n" +menu.getString(5) + "\n" +menu.getString(6);
-//                }
-//                Toast.makeText(getApplicationContext(), asd, Toast.LENGTH_SHORT).show();
-
-//                Intent i = new Intent(MainActivity.this, DetailActivity.class);
-//                i.putExtra("sessionId", position + 1);
-//                startActivity(i);
-
                 Intent i = new Intent(MainActivity.this, HaditsActivity.class);
-                i.putExtra("sessionId", position + 1);
+                HaditsActivity.id = position+1;
                 startActivity(i);
             }
 

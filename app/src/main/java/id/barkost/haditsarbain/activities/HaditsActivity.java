@@ -1,5 +1,6 @@
 package id.barkost.haditsarbain.activities;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import android.text.Spanned;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,9 +25,10 @@ import id.barkost.haditsarbain.dbHelper.DatabaseHelper;
 
 public class HaditsActivity extends AppCompatActivity {
 
-    public static String KEY_ITEM = "item";
+    public static int id = 0;
     private DatabaseHelper myDb;
     private TextView txArabic, txHadits, txTerjemah, txNo, txLatin, txFootnote;
+    private Button mediaPlay, mediaNext, mediaPrev, mediaRepeat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +39,6 @@ public class HaditsActivity extends AppCompatActivity {
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
 
-        Bundle session = getIntent().getExtras();
-        int sessionId = session.getInt("sessionId");
 
         txNo = (TextView) findViewById(R.id.tv_det_no);
         txLatin = (TextView) findViewById(R.id.tv_det_latin);
@@ -45,13 +46,38 @@ public class HaditsActivity extends AppCompatActivity {
         txTerjemah = (TextView) findViewById(R.id.tx_det_terjemah);
         txFootnote = (TextView) findViewById(R.id.tv_det_footnote);
 
+        mediaNext = (Button) findViewById(R.id.btn_media_next);
+        mediaNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(HaditsActivity.this, HaditsActivity.class);
+                id = id + 1;
+                startActivity(i);
+                finish();
+            }
+        });
+        mediaPrev = (Button) findViewById(R.id.btn_media_prev);
+        mediaPrev.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(HaditsActivity.this, HaditsActivity.class);
+                if (id == 1) {
+                    id = 1;
+                } else {
+                    id = id - 1;
+                }
+                startActivity(i);
+                finish();
+            }
+        });
+
         Typeface face;
         face = Typeface.createFromAsset(getAssets(), "font.otf");
         txHadits.setTypeface(face);
         txFootnote.setTypeface(null, Typeface.ITALIC);
 
         myDb = new DatabaseHelper(this);
-        Cursor menu = myDb.select_single_data(String.valueOf(sessionId));
+        Cursor menu = myDb.select_single_data(String.valueOf(id));
         if (menu.getCount() == 0) {
             return;
         }

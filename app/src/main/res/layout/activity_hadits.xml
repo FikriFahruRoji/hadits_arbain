@@ -36,7 +36,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingBottom="30dp"
                 android:layout_gravity="center_horizontal|bottom"
                 android:orientation="vertical">
 
@@ -81,6 +80,13 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:background="@drawable/media_play"/>
+
+                    <Button
+                        android:id="@+id/btn_media_repeat"
+                        android:layout_margin="20dp"
+                        android:layout_width="30dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/media_repeat"/>
 
                     <Button
                         android:id="@+id/btn_media_next"
