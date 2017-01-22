@@ -6,6 +6,8 @@ import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.support.design.widget.AppBarLayout;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.DividerItemDecoration;
@@ -15,12 +17,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import id.barkost.haditsarbain.touchListener.RecyclerTouchListener;
+import id.barkost.haditsarbain.listener.AppBarStateChangeListener;
+import id.barkost.haditsarbain.listener.RecyclerTouchListener;
 import id.barkost.haditsarbain.adapter.MenuAdapter;
 import id.barkost.haditsarbain.dbHelper.DatabaseHelper;
 import id.barkost.haditsarbain.model.ModelMenu;
@@ -32,15 +34,33 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private MenuAdapter mAdapter;
 
+    private Toolbar toolbar;
+
     private DatabaseHelper myDB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
+
+        AppBarLayout appbarLayout = (AppBarLayout) findViewById(R.id.app_bar_layout);
+        final CollapsingToolbarLayout collapsingtoolbarlayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
+
+        appbarLayout.addOnOffsetChangedListener(new AppBarStateChangeListener() {
+            @Override
+            public void onStateChanged(AppBarLayout appBarLayout, State state) {
+                if (state.name().equals("COLLAPSED")) {
+                    collapsingtoolbarlayout.setTitle(getResources().getString(R.string.app_name));
+                } else if (state.name().equals("EXPANDED")) {
+                    collapsingtoolbarlayout.setTitle("");
+                } else if (state.name().equals("IDLE")) {
+                    collapsingtoolbarlayout.setTitle("");
+                }
+            }
+        });
 
         myDB = new DatabaseHelper(this);
 

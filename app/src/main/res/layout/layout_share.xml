@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/cb_hadits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hadits" />
+
+    <CheckBox
+        android:id="@+id/cb_terjemah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terjemah" />
+
+    <CheckBox
+        android:id="@+id/cb_syarah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Syarah" />
+</LinearLayout>

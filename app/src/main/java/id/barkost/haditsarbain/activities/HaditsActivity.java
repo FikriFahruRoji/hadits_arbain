@@ -4,12 +4,11 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.support.design.widget.AppBarLayout;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Html;
-import android.text.Spanned;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,9 +16,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.sufficientlysecure.htmltextview.HtmlResImageGetter;
-import org.sufficientlysecure.htmltextview.HtmlTextView;
-
+import id.barkost.haditsarbain.listener.AppBarStateChangeListener;
 import id.barkost.haditsarbain.R;
 import id.barkost.haditsarbain.dbHelper.DatabaseHelper;
 
@@ -29,16 +26,31 @@ public class HaditsActivity extends AppCompatActivity {
     private DatabaseHelper myDb;
     private TextView txArabic, txHadits, txTerjemah, txNo, txLatin, txFootnote;
     private Button mediaPlay, mediaNext, mediaPrev, mediaRepeat;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hadits);
-
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
 
+        AppBarLayout appbarLayout = (AppBarLayout) findViewById(R.id.app_bar_layout);
+        final CollapsingToolbarLayout collapsingtoolbarlayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
+
+        appbarLayout.addOnOffsetChangedListener(new AppBarStateChangeListener() {
+            @Override
+            public void onStateChanged(AppBarLayout appBarLayout, State state) {
+                if (state.name().equals("COLLAPSED")) {
+                    collapsingtoolbarlayout.setTitle("Hadits ke - " + Integer.toString(id + 1));
+                } else if (state.name().equals("EXPANDED")) {
+                    collapsingtoolbarlayout.setTitle("");
+                } else if (state.name().equals("IDLE")) {
+                    collapsingtoolbarlayout.setTitle("");
+                }
+            }
+        });
 
         txNo = (TextView) findViewById(R.id.tv_det_no);
         txLatin = (TextView) findViewById(R.id.tv_det_latin);
@@ -54,6 +66,7 @@ public class HaditsActivity extends AppCompatActivity {
                 id = id + 1;
                 startActivity(i);
                 finish();
+                overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
             }
         });
         mediaPrev = (Button) findViewById(R.id.btn_media_prev);
@@ -68,6 +81,7 @@ public class HaditsActivity extends AppCompatActivity {
                 }
                 startActivity(i);
                 finish();
+                overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right);
             }
         });
 
@@ -102,7 +116,11 @@ public class HaditsActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_share) {
-            Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
+            Intent sendIntent = new Intent();
+            sendIntent.setAction(Intent.ACTION_SEND);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "This is my text to send.");
+            sendIntent.setType("text/plain");
+            startActivity(sendIntent);
         } else if (id == R.id.action_bookmark) {
             Toast.makeText(this, "Bookmark", Toast.LENGTH_SHORT).show();
         }
