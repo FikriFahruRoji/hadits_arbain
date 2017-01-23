@@ -4,13 +4,6 @@
     tools:context="id.barkost.haditsarbain.activities.HaditsActivity">
 
     <item
-        android:id="@+id/action_bookmark"
-        android:icon="@drawable/bookmark"
-        app:showAsAction="always"
-        android:orderInCategory="1"
-        android:title="@string/action_bookmark" />
-
-    <item
         android:id="@+id/action_share"
         android:icon="@drawable/share"
         app:showAsAction="ifRoom"

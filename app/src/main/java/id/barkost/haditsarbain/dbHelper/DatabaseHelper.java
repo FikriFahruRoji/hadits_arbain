@@ -15,6 +15,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public String tableName = "hadits";
     public String colId = "id";
+    public String colFav = "favorite";
     public String colJudulLatin = "judul";
     public String colJudulArabic = "judul_arabic";
     public String colIsiHadits = "isi_hadits";
@@ -29,7 +30,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             colJudulArabic + " TEXT, " +
             colIsiHadits +" TEXT, " +
             colTerjemahHadits +" TEXT, " +
-            colFootNote +" TEXT);";
+            colFootNote +" TEXT, " +
+            colFav + " INT DEFAULT 0);";
 
     public DatabaseHelper(Context context) {
         super(context, "arbain.db", null, 1);
@@ -71,6 +73,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Cursor transaction = db.rawQuery("SELECT * FROM " + tableName + " WHERE " + colId + " = " + id + " ORDER BY " + colId, null);
 //        Cursor transaction = db.rawQuery("SELECT * FROM transactions WHERE date ='" + date + "' ORDER BY date+time DESC", null);
         return transaction;
+    }
+
+    //Update data from table source
+    public boolean update_table_source(String id, int favorite) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(colFav, favorite);
+        db.update(tableName, values, colId + " = ?", new String[]{id});
+        return true;
     }
 
     public Cursor delete() {

@@ -607,4 +607,7 @@
     <string name="action_bookmark">Bookmark</string>
     <string name="hilangkan_hadits">-</string>
     <string name="tampilkan_hadits">+</string>
+    <string name="share">Share</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Batal</string>
 </resources>

@@ -39,14 +39,14 @@
                     android:textSize="15sp" />
 
                 <ImageView
-                    android:id="@+id/img_visible"
+                    android:id="@+id/img_visible_hadits"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:layout_alignParentRight="true"
                     android:layout_marginBottom="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/text_show"/>
+                    android:src="@drawable/text_hide"/>
 
                 <TextView
                     android:id="@+id/tx_det_hadits"
@@ -83,6 +83,16 @@
                     android:text="@string/terjemah"
                     android:textColor="@color/colorAccent"
                     android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/img_visible_terjemah"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/text_hide"/>
 
                 <TextView
                     android:id="@+id/tx_det_terjemah"
