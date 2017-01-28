@@ -21,6 +21,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public String colIsiHadits = "isi_hadits";
     public String colTerjemahHadits = "terjemah_hadits";
     public String colFootNote = "fote_note_hadits";
+    public String colSyarah = "syarah";
+    public String colMedia = "media";
 
     private SQLiteDatabase db;
 
@@ -31,6 +33,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             colIsiHadits +" TEXT, " +
             colTerjemahHadits +" TEXT, " +
             colFootNote +" TEXT, " +
+            colSyarah +" TEXT, " +
+            colMedia +" INT, " +
             colFav + " INT DEFAULT 0);";
 
     public DatabaseHelper(Context context) {
@@ -48,7 +52,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public boolean insert_table(int id, String judul, String judul_arabic, String isi_hadits, String terjemah_hadits, String foot_note_hadits) {
+    public boolean insert_table(int id, String judul, String judul_arabic, String isi_hadits, String terjemah_hadits, String syarah, String foot_note_hadits, int media) {
         db = this.getWritableDatabase();
         ContentValues content_values = new ContentValues();
         content_values.put(colId, id);
@@ -57,6 +61,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         content_values.put(colIsiHadits, isi_hadits);
         content_values.put(colTerjemahHadits, terjemah_hadits);
         content_values.put(colFootNote, foot_note_hadits);
+        content_values.put(colSyarah, syarah);
+        content_values.put(colMedia, media);
         long result = db.insert(tableName, null, content_values);
         return result != -1;
     }

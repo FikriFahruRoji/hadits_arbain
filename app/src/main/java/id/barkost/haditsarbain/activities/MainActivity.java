@@ -21,8 +21,8 @@ import android.view.View;
 import java.util.ArrayList;
 import java.util.List;
 
-import id.barkost.haditsarbain.listener.AppBarStateChangeListener;
-import id.barkost.haditsarbain.listener.RecyclerTouchListener;
+import id.barkost.haditsarbain.util.AppBarStateChangeListener;
+import id.barkost.haditsarbain.util.RecyclerTouchListener;
 import id.barkost.haditsarbain.adapter.MenuAdapter;
 import id.barkost.haditsarbain.dbHelper.DatabaseHelper;
 import id.barkost.haditsarbain.model.ModelMenu;
@@ -74,9 +74,54 @@ public class MainActivity extends AppCompatActivity {
             String[] isi_hadits = res.getStringArray(R.array.isi_hadits);
             String[] terjemah_hadits = res.getStringArray(R.array.terjemah_hadits);
             String[] rowi_hadits = res.getStringArray(R.array.footnote_hadits);
+            String[] syarah = res.getStringArray(R.array.faidah_hadits);
+            int[] media = {
+                    R.raw.al_falaq,
+                    R.raw.al_falaq,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+                    R.raw.an_naas,
+            };
             int Length = id.length;
             for (int i = 0; i < Length; i++) {
-                myDB.insert_table(Integer.parseInt(id[i]), judul_latin[i], judul_arabic[i], isi_hadits[i], terjemah_hadits[i], rowi_hadits[i]);
+                myDB.insert_table(Integer.parseInt(id[i]), judul_latin[i], judul_arabic[i], isi_hadits[i], terjemah_hadits[i], rowi_hadits[i], syarah[i], media[i]);
             }
         }
 

@@ -1,4 +1,4 @@
-package id.barkost.haditsarbain.listener;
+package id.barkost.haditsarbain.util;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;

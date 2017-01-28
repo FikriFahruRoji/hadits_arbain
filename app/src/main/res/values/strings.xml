@@ -43,6 +43,8 @@
         <item>38</item>
         <item>39</item>
         <item>40</item>
+        <item>41</item>
+        <item>42</item>
     </string-array>
 
     <string-array name="judul_latin">
@@ -88,6 +90,8 @@
         <item>Hiduplah Laksana Musafir</item>
         <item>Mengikuti Syariat adalah Tiang Keimanan</item>
         <item>Luasnya Ampunan Allah</item>
+        <item>Mengikuti Syariat adalah Tiang Keimanan</item>
+        <item>Luasnya Ampunan Allah</item>
     </string-array>
 
     <string-array name="judul_arabic">
@@ -131,6 +135,8 @@
         <item>الحــديث الثامن والثلاثون</item>
         <item>الحــديث التاسع والثلاثون</item>
         <item>الحــديث الأربعون</item>
+        <item>الحديث الحادي والأربعون</item>
+        <item>الحديث الثاني والأربعون</item>
     </string-array>
 
     <string-array name="isi_hadits">
@@ -175,6 +181,10 @@
         <item>عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللهُ عَنْهُ قَالَ : قَالَ رَسُوْلُ اللهِ صلى الله عليه وسلم : إِنَّ اللهَ تَعَالَى قَالَ : مَنْ عَادَى لِي وَلِيًّا فَقَدْ آذَنْتُهُ بِالْحَرْبِ، وَمَا تَقَرَّبَ إِلَيَّ عَبْدِي بِشَيْءٍ أَحَبَّ إِلَيَّ مِمَّا افْتَرَضْتُهُ عَلَيْهِ، وَلاَ يَزَالُ عَبْدِي يَتَقَرَّبُ إِلَيَّ بِالنَّوَافِلِ حَتَّى أُحِبَّهُ، فَإِذَا أَحْبَبْتُهُ كُنْتُ سَمْعَهُ الَّذِي يَسْمَعُ بِهِ وَبَصَرَهُ الَّذِي يُبْصِرُ بِهِ، وَيَدَهُ الَّتِي يَبْطِشُ بِهَا، وَرِجْلَهُ الَّتِي يَمْشِي بِهَا، وَلَئِنْ سَأَلَنِي لأُعْطِيَنَّهُ، وَلَئِنِ اسْتَعَاذَنِي لأُعِيْذَنَّهُ. [رواه البخاري]</item>
         <item>عَنِ ابْنِ عَبَّاس رَضِيَ اللهُ عَنْهُمَا : أَنَّ رَسُوْلَ اللهِ صَلَّى الله عليه وسلم قَالَ : إِنَّ اللهَ تَجَاوَزَ لِيْ عَنْ أُمَّتِي : الْخَطَأُ وَالنِّسْيَانُ وَمَا اسْتُكْرِهُوا عَلَيْهِ. [حديث حسن رواه ابن ماجة والبيهقي وغيرهما]</item>
         <item>عَنْ ابْنِ عُمَرْ رضي الله عَنْهُمَا قَالَ : أَخَذَ رَسُوْلُ اللهِ صلى الله عليه وسلم بِمَنْكِبَيَّ فَقَالَ : كُنْ فِي الدُّنْيَا كَأَنَّكَ غَرِيْبٌ أَوْ عَابِرُ سَبِيْلٍ. وَكاَنَ ابْنُ عُمَرَ رَضِيَ اللهُ عَنْهُمَا يَقُوْلُ : إِذَا أَمْسَيْتَ فَلاَ تَنْتَظِرِ الصَّبَاحَ، وَإِذَا أَصْبَحْتَ فَلاَ تَنْتَظِرِ الْمَسَاءَ، وَخُذْ مِنْ صِحَّتِكَ لِمَرَضِكَ، وَمِنْ حَيَاتِكَ لِمَوْتِكَ. [رواه البخاري]</item>
+        <item>
+عَنْ أَبِي مُحَمَّدٍ عَبْدِ اللهِ بْنِ عَمْرو بْنِ الْعَاصِ رَضِيَ اللهُ عَنْهُمَا قَالَ : قَالَ رَسُوْلُ اللهِ صلى الله عليه وسلم : لاَ يُؤْمِنُ أَحَدُكُمْ حَتَّى يَكُوْنَ هَوَاهُ تَبَعاً لِمَا جِئْتُ بِهِ [حَديثٌ حَسَنٌ صَحِيْحٌ وَرَوَيْنَاهُ فِي كِتَابِ الْحُجَّة بإسنادٍ صحيحٍ ]</item>
+        <item>
+عَنْ أَنَسٍ رَضِيَ اللهُ عَنْهُ قَالَ : سَمِعْتُ رَسُوْلَ اللهِ صَلَّى الله عليه وسلم يَقُوْلُ : قَالَ اللهُ تَعَالَى : يَا ابْنَ آدَمَ، إِنَّكَ مَا دَعَوْتَنِي وَرَجَوْتَنِي غَفَرْتُ لَكَ عَلَى مَاكَانَ مِنْكَ وَلاَ أُبَالِي، يَا ابْنَ آدَمَ لَوْ بَلَغَتْ ذُنُوْبُكَ عَنَانَ السَّماَءِ ثُمَّ اسْتَغْفَرْتَنِي غَفَرْتُ لَكَ، يَا ابْنَ آدَمَ، إِنَّكَ لَوْ أَتَيْتَنِي بِقُرَابِ اْلأَرْضِ خَطاَياَ ثُمَّ لَقِيْتَنِي لاَ تُشْرِكْ بِي شَيْئاً لأَتَيْتُكَ بِقُرَابِهَا مَغْفِرَةً [رواه الترمذي وقال حديث حسن صحيح ]</item>
     </string-array>
 
     <string-array name="terjemah_hadits">
@@ -357,6 +367,14 @@
             Dari Ibnu Umar radhiallahuanhuma berkata: Rasulullah shallallahu \'alaihi wa sallam memegang kedua pundak saya seraya bersabda: <b><i>Hiduplah engkau di dunia seakan-akan orang asing atau pengembara</b></i>, Ibnu Umar berkata: <b><i>Jika kamu berada di sore hari jangan tunggu pagi hari, dan jika kamu berada di pagi hari jangan tunggu sore hari, gunakanlah kesehatanmu untuk (persiapan saat) sakitmu dan kehidupanmu untuk kematianmu</b></i>.
             ]]>
         </item>
+        <item><![CDATA[
+            Dari Abu Muhammad Abdillah bin Amr bin \'Ash radhiallahuanhuma dia berkata: Rasulullah shallallahu \'alaihi wa sallam bersabda: <b><i>Tidak beriman salah seorang di antara kalian hingga hawa nafsunya mengikuti apa yang aku bawa</b></i>.
+            ]]>
+        </item>
+        <item><![CDATA[
+            Dari Anas Radhiallahuanhu dia berkata, Saya mendengar Rasulullah shallallahu \'alaihi wa sallam  bersabda, Allah ta\'ala berfirman: <b><i>Wahai anak Adam, sesungguhnya Engkau berdoa kepada-Ku dan memohon kepada-Ku, maka akan aku ampuni engkau, aku tidak peduli (berapapun banyaknya dan besarnya dosamu). Wahai anak Adam seandainya dosa-dosamu (sebanyak) awan di langit kemudian engkau minta ampun kepadaku niscaya akan Aku ampuni engkau. Wahai anak Adam sesungguhnya jika engkau datang kepadaku dengan kesalahan sepenuh bumi kemudian engkau menemuiku dengan tidak menyekutukan Aku sedikitpun maka akan Aku temui engkau dengan sepenuh itu pula ampunan<b><i>.
+            ]]>
+        </item>
     </string-array>
 
     <string-array name="footnote_hadits">
@@ -400,201 +418,342 @@
         <item>Riwayat Bukhari</item>
         <item>Hadits hasan diriwayatkan oleh Ibnu Majah dan Baihaqi dan lainnya</item>
         <item>Riwayat Bukhari</item>
+        <item>Hadits ini tergolong dha\'if. Lihat Qawa\'id Wa Fawa\'id minal Arba\'in An-Nawawiyah, karangan Nazim Muhammad Sulthan hal. 355, Misykatul Mashabih takhrij Syekh Al Albani, hadits no. 167, juz 1, Jami\' Al Ulum wal Hikam oleh Ibn Rajab.</item>
+        <item>Riwayat Tirmizi dan dia berkata: \"haditsnya hasan shahih\"</item>
     </string-array>
 
     <string-array name="faidah_hadits">
-        <item><![CDATA[
-            Niat merupakan syarat layak/diterima atau tidaknya amal perbuatan, dan amal ibadah tidak akan menghasilkankan pahala kecuali berdasarkan niat (karena Allah ta\'ala).<br><br>
-            Waktu pelaksanaan niat dilakukan pada awal ibadah dan tempatnya di hati.<br><br>
-            Ikhlas dan membebaskan niat semata-mata karena Allah ta\'ala dituntut pada semua amal shaleh dan ibadah.<br><br>
-            Seorang mu\'min akan diberi ganjaran pahala berdasarkan kadar niatnya.<br><br>
-            Semua perbuatan yang bermanfaat dan mubah (boleh) jika diiringi niat karena mencari keridhaan Allah maka dia akan bernilai ibadah.<br><br>
-            Yang membedakan antara ibadah dan adat (kebiasaan/rutinitas) adalah niat.<br><br>
-            Hadits di atas menunjukkan bahwa niat merupakan bagian dari iman karena dia merupakan pekerjaan hati, dan iman menurut pemahaman Ahli Sunnah Wal Jamaah adalah membenarkan dalam hati, diucapkan dengan lisan dan diamalkan dengan perbuatan.
-            ]]>
+        <item>
+            1. Niat merupakan syarat layak/diterima atau tidaknya amal perbuatan, dan amal ibadah tidak akan menghasilkankan pahala kecuali berdasarkan niat (karena Allah ta’ala).\n\n
+            2. Waktu pelaksanaan niat dilakukan pada awal ibadah dan tempatnya di hati.\n\n
+            3. Ikhlas dan membebaskan niat semata-mata karena Allah ta’ala dituntut pada semua amal shaleh dan ibadah.\n\n
+            4. Seorang mu’min akan diberi ganjaran pahala berdasarkan kadar niatnya.\n\n
+            5. Semua perbuatan yang bermanfaat dan mubah (boleh) jika diiringi niat karena mencari keridhaan Allah maka dia akan bernilai ibadah.\n\n
+            6. Yang membedakan antara ibadah dan adat (kebiasaan/rutinitas) adalah niat.\n\n
+            7. Hadits di atas menunjukkan bahwa niat merupakan bagian dari iman karena dia merupakan pekerjaan hati, dan iman menurut pemahaman Ahli Sunnah Wal Jamaah adalah membenarkan dalam hati, diucapkan dengan lisan dan diamalkan dengan perbuatan.
         </item>
-        <item><![CDATA[
-            Niat merupakan syarat layak/diterima atau tidaknya amal perbuatan, dan amal ibadah tidak akan menghasilkankan pahala kecuali berdasarkan niat (karena Allah ta’ala).<br><br>
-            Waktu pelaksanaan niat dilakukan pada awal ibadah dan tempatnya di hati.<br><br>
-            Ikhlas dan membebaskan niat semata-mata karena Allah ta’ala dituntut pada semua amal shaleh dan ibadah.<br><br>
-            Seorang mu’min akan diberi ganjaran pahala berdasarkan kadar niatnya.<br><br>
-            Semua perbuatan yang bermanfaat dan mubah (boleh) jika diiringi niat karena mencari keridhaan Allah maka dia akan bernilai ibadah.<br><br>
-            Yang membedakan antara ibadah dan adat (kebiasaan/rutinitas) adalah niat.<br><br>
-            Hadits di atas menunjukkan bahwa niat merupakan bagian dari iman karena dia merupakan pekerjaan hati, dan iman menurut pemahaman Ahli Sunnah Wal Jamaah adalah membenarkan dalam hati, diucapkan dengan lisan dan diamalkan dengan perbuatan.<br><br>
-            ]]>
+        <item>
+            1. Disunnahkan untuk memperhatikan kondisi pakaian, penampilan dan kebersihan, khususnya jika menghadapi ulama, orang-orang mulia dan penguasa. \n\n
+            2. Siapa yang menghadiri majlis ilmu dan menangkap bahwa orang–orang yang hadir butuh untuk mengetahui suatu masalah dan tidak ada seorangpun yang bertanya, maka wajib baginya bertanya tentang hal tersebut meskipun dia mengetahuinya agar peserta yang hadir dapat mengambil manfaat darinya. \n\n
+            3. Jika seseorang yang ditanya tentang sesuatu maka tidak ada cela baginya untuk berkata, “Saya tidak tahu“, dan hal tersebut tidak mengurangi kedudukannya. \n\n
+            4. Kemungkinan malaikat tampil dalam wujud manusia. \n\n
+            5. Termasuk tanda hari kiamat adalah banyaknya pembangkangan terhadap kedua orang tua. Sehingga anak-anak memperlakukan kedua orang tuanya sebagaimana seorang tuan memperlakukan hamba-sahayanya. \n\n
+            6. Tidak disukainya mendirikan bangunan yang tinggi dan membaguskannya selama tidak dibutuhkan. \n\n
+            7. Di dalamnya terdapat dalil bahwa perkara ghaib tidak ada yang mengetahuinya selain Allah ta’ala. \n\n
+            8. Di dalamnya terdapat keterangan tentang adab dan cara duduk dalam majlis ilmu.
         </item>
-        <item><![CDATA[
-            Disunnahkan untuk memperhatikan kondisi pakaian, penampilan dan kebersihan, khususnya jika menghadapi ulama, orang-orang mulia dan penguasa. <br><br>
-            Siapa yang menghadiri majlis ilmu dan menangkap bahwa orang–orang yang hadir butuh untuk mengetahui suatu masalah dan tidak ada seorangpun yang bertanya, maka wajib baginya bertanya tentang hal tersebut meskipun dia mengetahuinya agar peserta yang hadir dapat mengambil manfaat darinya.<br><br>
-            Jika seseorang yang ditanya tentang sesuatu maka tidak ada cela baginya untuk berkata, “Saya tidak tahu“, dan hal tersebut tidak mengurangi kedudukannya. <br><br>
-            Kemungkinan malaikat tampil dalam wujud manusia. <br><br>
-            Termasuk tanda hari kiamat adalah banyaknya pembangkangan terhadap kedua orang tua. Sehingga anak-anak memperlakukan kedua orang tuanya sebagaimana seorang tuan memperlakukan hamba-sahayanya. <br><br>
-            Tidak disukainya mendirikan bangunan yang tinggi dan membaguskannya selama tidak dibutuhkan. <br><br>
-            Di dalamnya terdapat dalil bahwa perkara ghaib tidak ada yang mengetahuinya selain Allah ta’ala. <br><br>
-            Di dalamnya terdapat keterangan tentang adab dan cara duduk dalam majlis ilmu. <br><br>
-            ]]>
+        <item>
+            1. Rasulullah shallallahu`alaihi wa sallam menyamakan Islam dengan bangunan yang kokoh dan tegak di atas tiang-tiang yang kuat. \n\n
+            2. Pernyataan tentang keesaan Allah dan keberadaan-Nya, membenarkan kenabian Muhammad shallallahu`alaihi wa sallam ,  merupakan hal yang paling mendasar dibanding rukun-rukun yang lainnya.\n\n
+            3. Selalu menegakkan shalat dan menunaikannya secara sempurna dengan syarat rukunnya, adab-adabnya dan sunnah-sunnahnya agar dapat memberikan buahnya dalam diri seorang muslim yaitu meninggalkan perbuatan keji dan munkar karena shalat mencegah seseorang dari perbuatan keji dan munkar. \n\n
+            4. Wajib mengeluarkan zakat dari harta orang kaya yang sudah terpenuhi syarat-syarat zakat lalu memberikannya kepada orang-orang fakir dan yang membutuhkan. \n\n
+            5. Wajibnya menunaikan ibadah haji dan puasa (Ramadhan) bagi setiap muslim. \n\n
+            6. Adanya keterkaitan rukun Islam satu sama lain. Siapa yang mengingkarinya maka dia bukan seorang muslim berdasarkan ijma’. \n\n
+            7. Nash di atas menunjukkan bahwa rukun Islam ada lima, dan masih banyak lagi perkara lain yang penting dalam Islam yang tidak ditunjukkan dalam hadits ini. Rasulullah shallallahu`alaihi wa sallam bersabda:\n\n
+            الإِيْمَانُ بِضْعٌ وَسَبْعُوْنَ شُعْبَةً \n
+            “ Iman itu memiliki tujuh puluh lebih cabang “\n\n
+            8. Islam adalah aqidah dan amal perbuatan. Tidak bermanfaat amal tanpa iman demikian juga tidak bermanfaat iman tanpa amal.
         </item>
-        <item><![CDATA[
-            Rasulullah shallallahu`alaihi wa sallam menyamakan Islam dengan bangunan yang kokoh dan tegak di atas tiang-tiang yang kuat. <br><br>
-            Pernyataan tentang keesaan Allah dan keberadaan-Nya, membenarkan kenabian Muhammad shallallahu`alaihi wa sallam ,  merupakan hal yang paling mendasar dibanding rukun-rukun yang lainnya.<br><br>
-            Selalu menegakkan shalat dan menunaikannya secara sempurna dengan syarat rukunnya, adab-adabnya dan sunnah-sunnahnya agar dapat memberikan buahnya dalam diri seorang muslim yaitu meninggalkan perbuatan keji dan munkar karena shalat mencegah seseorang dari perbuatan keji dan munkar. <br><br>
-            Wajib mengeluarkan zakat dari harta orang kaya yang sudah terpenuhi syarat-syarat zakat lalu memberikannya kepada orang-orang fakir dan yang membutuhkan. <br><br>
-            Wajibnya menunaikan ibadah haji dan puasa (Ramadhan) bagi setiap muslim. <br><br>
-            Adanya keterkaitan rukun Islam satu sama lain. Siapa yang mengingkarinya maka dia bukan seorang muslim berdasarkan ijma’.<br><br>
-            Nash di atas menunjukkan bahwa rukun Islam ada lima, dan masih banyak lagi perkara lain yang penting dalam Islam yang tidak ditunjukkan dalam hadits ini. Rasulullah shallallahu`alaihi wa sallam bersabda: <br>
-            الإِيْمَانُ بِضْعٌ وَسَبْعُوْنَ شُعْبَةً
-            <br>\"Iman itu memiliki tujuh puluh lebih cabang\"<br><br>
-            Islam adalah aqidah dan amal perbuatan. Tidak bermanfaat amal tanpa iman demikian juga tidak bermanfaat iman tanpa amal.<br><br>
-            ]]>
+        <item>
+            1. Allah ta’ala mengetahui tentang keadaan makhluk-Nya sebelum mereka diciptakan dan apa yang akan mereka alami, termasuk masalah bahagia dan celaka.\n\n
+            2. Tidak mungkin bagi manusia di dunia ini untuk memutuskan bahwa dirinya masuk syurga atau neraka, akan tetapi amal perbuatan merupakan sebab untuk memasuki keduanya. \n\n
+            3. Amal perbuatan dinilai di akhirnya. Maka hendaklah manusia tidak terpedaya dengan kondisinya saat ini, justru harus selalu mohon kepada Allah agar diberi keteguhan dan akhir yang baik (husnul khotimah). \n\n
+            4. Disunnahkan bersumpah untuk mendatangkan kemantapan sebuah perkara dalam jiwa. \n\n
+            5. Tenang dalam masalah rizki dan qanaah (menerima) dengan mengambil sebab-sebab serta tidak terlalu mengejar-ngejarnya dan mencurahkan hati karenanya. \n\n
+            6. Kehidupan ada di Tangan Allah. Seseorang tidak akan mati kecuali dia telah menyempurnakan umurnya. \n\n
+            7. Sebagian ulama dan orang bijak berkata bahwa dijadikannya pertumbuhan janin manusia dalam kandungan secara berangsur-angsur adalah sebagai rasa belas kasih terhadap ibu. Karena sesungguhnya Allah mampu menciptakannya sekaligus.
         </item>
-        <item><![CDATA[
-            Allah ta’ala mengetahui tentang keadaan makhluk-Nya sebelum mereka diciptakan dan apa yang akan mereka alami, termasuk masalah bahagia dan celaka.<br><br>
-            Tidak mungkin bagi manusia di dunia ini untuk memutuskan bahwa dirinya masuk syurga atau neraka, akan tetapi amal perbuatan merupakan sebab untuk memasuki keduanya. <br><br>
-            Amal perbuatan dinilai di akhirnya. Maka hendaklah manusia tidak terpedaya dengan kondisinya saat ini, justru harus selalu mohon kepada Allah agar diberi keteguhan dan akhir yang baik (husnul khotimah). <br><br>
-            Disunnahkan bersumpah untuk mendatangkan kemantapan sebuah perkara dalam jiwa. <br><br>
-            Tenang dalam masalah rizki dan qanaah (menerima) dengan mengambil sebab-sebab serta tidak terlalu mengejar-ngejarnya dan mencurahkan hati karenanya. <br><br>
-            Kehidupan ada di Tangan Allah. Seseorang tidak akan mati kecuali dia telah menyempurnakan umurnya. <br><br>
-            Sebagian ulama dan orang bijak berkata bahwa dijadikannya pertumbuhan janin manusia dalam kandungan secara berangsur-angsur adalah sebagai rasa belas kasih terhadap ibu. Karena sesungguhnya Allah mampu menciptakannya sekaligus.<br><br>
-        ]]>
+        <item>
+            1. Setiap perbuatan ibadah yang tidak bersandar pada dalil syar’i ditolak dari pelakunya. \n\n
+            2. Larangan dari perbuatan bid’ah yang buruk berdasarkan syari’at. \n\n
+            3. Islam adalah agama yang berdasarkan ittiba’ (mengikuti berdasarkan dalil) bukan ibtida’ (mengada-adakan sesuatu tanpa dalil) dan Rasulullah shallallahu`alaihi wa sallam telah berusaha menjaganya dari sikap yang berlebih-lebihan dan mengada-ada. \n\n
+            4. Agama Islam adalah agama yang sempurna tidak ada kurangnya.
         </item>
-        <item><![CDATA[
-            Setiap perbuatan ibadah yang tidak bersandar pada dalil syar’i ditolak dari pelakunya. <br><br>
-            Larangan dari perbuatan bid’ah yang buruk berdasarkan syari’at. <br><br>
-            Islam adalah agama yang berdasarkan ittiba’ (mengikuti berdasarkan dalil) bukan ibtida’ (mengada-adakan sesuatu tanpa dalil) dan Rasulullah shallallahu`alaihi wa sallam telah berusaha menjaganya dari sikap yang berlebih-lebihan dan mengada-ada. <br><br>
-            Agama Islam adalah agama yang sempurna tidak ada kurangnya.
-        ]]>
+        <item>
+            1. Termasuk sikap wara’ adalah meninggalkan syubhat. \n\n
+            2. Banyak melakukan syubhat akan mengantarkan seseorang kepada perbuatan haram. \n\n
+            3. Menjauhkan perbuatan dosa kecil karena hal tersebut dapat menyeret seseorang kepada perbuatan dosa besar.\n\n
+            4. Memberikan perhatian terhadap masalah hati, karena padanya terdapat kebaikan fisik. \n\n
+            5. Baiknya amal perbuatan anggota badan merupakan pertanda baiknya hati. \n\n
+            6. Pertanda ketakwaan seseorang jika dia meninggalkan perkara-perkara yang diperbolehkan karena khawatir akan terjerumus kepada hal-hal yang diharamkan. \n\n
+            7. Menutup pintu terhadap peluang-peluang perbuatan haram serta haramnya sarana dan cara kearah sana. \n\n
+            8. Hati-hati dalam masalah agama dan kehormatan serta tidak melakukan perbuatan-perbuatan yang dapat mendatangkan persangkaan buruk.
         </item>
-        <item><![CDATA[
-            Termasuk sikap wara\' adalah meninggalkan syubhat.<br><br>
-            Banyak melakukan syubhat akan mengantarkan seseorang kepada perbuatan haram. <br><br>
-            Menjauhkan perbuatan dosa kecil karena hal tersebut dapat menyeret seseorang kepada perbuatan dosa besar.<br><br>
-            Memberikan perhatian terhadap masalah hati, karena padanya terdapat kebaikan fisik. <br><br>
-            Baiknya amal perbuatan anggota badan merupakan pertanda baiknya hati. <br><br>
-            Pertanda ketakwaan seseorang jika dia meninggalkan perkara-perkara yang diperbolehkan karena khawatir akan terjerumus kepada hal-hal yang diharamkan. <br><br>
-            Menutup pintu terhadap peluang-peluang perbuatan haram serta haramnya sarana dan cara kearah sana. <br><br>
-            Hati-hati dalam masalah agama dan kehormatan serta tidak melakukan perbuatan-perbuatan yang dapat mendatangkan persangkaan buruk.
-        ]]>
+        <item>
+            1. Maklumat peperangan kepada mereka yang berlaku musyrik hingga mereka masuk Islam. \n\n
+            2. Diperbolehkannya membunuh orang yang mengingkari shalat dan memerangi mereka yang menolak membayar zakat. \n\n
+            3. Tidak diperbolehkan berlaku sewenang-wenang terhadap harta dan darah kaum muslimin. \n\n
+            4. Diperbolehkannya hukuman mati bagi setiap muslim jika dia melakukan perbuatan yang menuntut dijatuhkannya hukuman itu seperti: Berzina bagi orang yang sudah menikah (muhshan), membunuh orang lain dengan sengaja dan meninggalkan agama dan jamaahnya. \n\n
+            5. Dalam hadits ini terdapat jawaban bagi kelompok murji’ah yang mengira bahwa iman tidak membutuhkan amal perbuatan.\n\n
+            6. Tidak mengkafirkan pelaku bid’ah yang menyatakan keesaan Allah dan menjalankan syari’at-Nya. \n\n
+            7. Di dalamnya terdapat dalil bahwa diterimanya amal yang zhahir dan menghukumi berdasarkan sesuatu yang zhahir sementara yang tersembunyi diserahkan kepada Allah.
         </item>
-        <item><![CDATA[
-            Agama Islam berdiri tegak di atas upaya saling menasihati, maka harus selalu saling menasihati di antara masing-masing individu muslim. <br><br>
-            Nasihat wajib dilakukan sesuai kemampuan.
-        ]]>
+        <item>
+            1. Maklumat peperangan kepada mereka yang berlaku musyrik hingga mereka masuk Islam. \n\n
+            2. Diperbolehkannya membunuh orang yang mengingkari shalat dan memerangi mereka yang menolak membayar zakat. \n\n
+            3. Tidak diperbolehkan berlaku sewenang-wenang terhadap harta dan darah kaum muslimin. \n\n
+            4. Diperbolehkannya hukuman mati bagi setiap muslim jika dia melakukan perbuatan yang menuntut dijatuhkannya hukuman itu seperti: Berzina bagi orang yang sudah menikah (muhshan), membunuh orang lain dengan sengaja dan meninggalkan agama dan jamaahnya. \n\n
+            5. Dalam hadits ini terdapat jawaban bagi kelompok murji’ah yang mengira bahwa iman tidak membutuhkan amal perbuatan.\n\n
+            6. Tidak mengkafirkan pelaku bid’ah yang menyatakan keesaan Allah dan menjalankan syari’at-Nya. \n\n
+            7. Di dalamnya terdapat dalil bahwa diterimanya amal yang zhahir dan menghukumi berdasarkan sesuatu yang zhahir sementara yang tersembunyi diserahkan kepada Allah.
         </item>
-        <item><![CDATA[
-            Maklumat peperangan kepada mereka yang berlaku musyrik hingga mereka masuk Islam. <br><br>
-            Diperbolehkannya membunuh orang yang mengingkari shalat dan memerangi mereka yang menolak membayar zakat. <br><br>
-            Tidak diperbolehkan berlaku sewenang-wenang terhadap harta dan darah kaum muslimin. <br><br>
-            Diperbolehkannya hukuman mati bagi setiap muslim jika dia melakukan perbuatan yang menuntut dijatuhkannya hukuman itu seperti: Berzina bagi orang yang sudah menikah (muhshan), membunuh orang lain dengan sengaja dan meninggalkan agama dan jamaahnya. <br><br>
-            Dalam hadits ini terdapat jawaban bagi kelompok murji’ah yang mengira bahwa iman tidak membutuhkan amal perbuatan.<br><br>
-            Tidak mengkafirkan pelaku bid’ah yang menyatakan keesaan Allah dan menjalankan syari’at-Nya. <br><br>
-            Di dalamnya terdapat dalil bahwa diterimanya amal yang zhahir dan menghukumi berdasarkan sesuatu yang zhahir sementara yang tersembunyi diserahkan kepada Allah.
-        ]]>
+        <item>
+            1. Wajibnya menghindari semua apa yang dilarang oleh Rasulullah shallallahu`alaihi wa sallam. \n\n
+            2. Siapa yang tidak mampu melakukan perbuatan yang diperintahkan secara keseluruhan dan dia hanya mampu sebagiannya saja maka dia hendaknya melaksanakan apa yang dia mampu laksanakan. \n\n
+            3. Allah tidak akan membebankan kepada seseorang kecuali sesuai dengan kadar kemampuannya. \n\n
+            4. Perkara yang mudah tidak gugur karena perkara yang sulit. \n\n
+            5. Menolak keburukan lebih diutamakan dari mendatangkan kemaslahatan. \n\n
+            6. Larangan untuk saling bertikai dan anjuran untuk bersatu dan bersepakat. \n\n
+            7. Wajib mengikuti Rasulullah shallallahu`alaihi wa sallam, ta’at dan menempuh jalan keselamtan dan kesuksesan. \n\n
+            8. Al Hafiz berkata: Dalam hadits ini terdapat isyarat untuk menyibukkan diri dengan perkara yang lebih penting yang dibutuhkan saat itu ketimbang perkara yang saat tersebut belum dibutuhkan.
         </item>
-        <item><![CDATA[
-            Wajibnya menghindari semua apa yang dilarang oleh Rasulullah shallallahu`alaihi wa sallam. <br><br>
-            Siapa yang tidak mampu melakukan perbuatan yang diperintahkan secara keseluruhan dan dia hanya mampu sebagiannya saja maka dia hendaknya melaksanakan apa yang dia mampu laksanakan. <br><br>
-            Allah tidak akan membebankan kepada seseorang kecuali sesuai dengan kadar kemampuannya. <br><br>
-            Perkara yang mudah tidak gugur karena perkara yang sulit. <br><br>
-            Menolak keburukan lebih diutamakan dari mendatangkan kemaslahatan. <br><br>
-            Larangan untuk saling bertikai dan anjuran untuk bersatu dan bersepakat. <br><br>
-            Wajib mengikuti Rasulullah shallallahu`alaihi wa sallam, ta’at dan menempuh jalan keselamtan dan kesuksesan. <br><br>
-            Al Hafiz berkata: Dalam hadits ini terdapat isyarat untuk menyibukkan diri dengan perkara yang lebih penting yang dibutuhkan saat itu ketimbang perkara yang saat tersebut belum dibutuhkan.
-        ]]>
+        <item>
+            1. Dalam hadits di atas terdapat pelajaran akan sucinya Allah ta’ala dari segala kekurangan dan cela. \n\n
+            2. Allah ta’ala tidak menerima kecuali sesuatu yang baik. Maka siapa yang bersedekah dengan barang haram tidak akan diterima. \n\n
+            3. Sesuatu yang disebut baik adalah apa yang dinilai baik disisi Allah ta’ala. \n\n
+            4. Berlarut-larut dalam perbuatan haram akan menghalangi seseorang dari terkabulnya doa. \n\n
+            5. Orang yang maksiat tidak termasuk mereka yang dikabulkan doanya kecuali mereka yang Allah kehendaki. \n\n
+            6. Makan barang haram dapat merusak amal dan menjadi penghalang diterimanya amal perbuatan. \n\n
+            7. Anjuran untuk berinfaq dari barang yang halal dan larangan untuk berinfaq dari sesuatu yang haram. \n\n
+            8. Seorang hamba akan diberi ganjaran jika memakan sesuatu yang baik dengan maksud agar dirinya diberi kekuatan untuk ta’at kepada Allah. \n\n
+            9. Doa orang yang sedang safar dan yang hatinya sangat mengharap akan terkabul. \n\n
+            10. Dalam hadits terdapat sebagian sebab-sebab dikabulkannya do’a: Perjalanan jauh, kondisi yang bersahaja dalam pakaian dan penampilan dalam keadaan kusut dan berdebu, mengangkat kedua tangan ke langit, meratap dalam berdoa, keinginan kuat dalam permintaan, mengkonsumsi makanan, minuman dan pakaian dengan sesuatu yang halal.
         </item>
-        <item><![CDATA[
-            Dalam hadits di atas terdapat pelajaran akan sucinya Allah ta’ala dari segala kekurangan dan cela. <br><br>
-            Allah ta’ala tidak menerima kecuali sesuatu yang baik. Maka siapa yang bersedekah dengan barang haram tidak akan diterima. <br><br>
-            Sesuatu yang disebut baik adalah apa yang dinilai baik disisi Allah ta’ala. <br><br>
-            Berlarut-larut dalam perbuatan haram akan menghalangi seseorang dari terkabulnya doa. <br><br>
-            Orang yang maksiat tidak termasuk mereka yang dikabulkan doanya kecuali mereka yang Allah kehendaki. <br><br>
-            Makan barang haram dapat merusak amal dan menjadi penghalang diterimanya amal perbuatan. <br><br>
-            Anjuran untuk berinfaq dari barang yang halal dan larangan untuk berinfaq dari sesuatu yang haram. <br><br>
-            Seorang hamba akan diberi ganjaran jika memakan sesuatu yang baik dengan maksud agar dirinya diberi kekuatan untuk ta’at kepada Allah. <br><br>
-            Doa orang yang sedang safar dan yang hatinya sangat mengharap akan terkabul. <br><br>
-            Dalam hadits terdapat sebagian sebab-sebab dikabulkannya do\'a: Perjalanan jauh, kondisi yang bersahaja dalam pakaian dan penampilan dalam keadaan kusut dan berdebu, mengangkat kedua tangan ke langit, meratap dalam berdoa, keinginan kuat dalam permintaan, mengkonsumsi makanan, minuman dan pakaian dengan sesuatu yang halal.
-        ]]>
+        <item>
+            1. Meninggalkan syubhat dan mengambil yang halal akan melahirkan sikap wara’. \n\n
+            2. Keluar dari ikhtilaf ulama lebih utama karena hal tersebut lebih terhindar dari perbuatan syubhat, khususnya jika di antara pendapat mereka tidak ada yang dapat dikuatkan. \n\n
+            3. Jika keraguan bertentangan dengan keyakinan maka keyakinan yang diambil. \n\n
+            4. Sebuah perkara harus jelas berdasarkan keyakinan dan ketenangan. Tidak ada harganya keraguan dan kebimbangan.\n\n
+            5. Berhati-hati dari sikap meremehkan terhadap urusan agama dan masalah bid’ah. \n\n
+            6. Siapa yang membiasakan perkara syubhat maka dia akan berani melakukan perbuatan yang haram.
         </item>
-        <item><![CDATA[
-            Meninggalkan syubhat dan mengambil yang halal akan melahirkan sikap wara\'. <br><br>
-            Keluar dari ikhtilaf ulama lebih utama karena hal tersebut lebih terhindar dari perbuatan syubhat, khususnya jika di antara pendapat mereka tidak ada yang dapat dikuatkan. <br><br>
-            Jika keraguan bertentangan dengan keyakinan maka keyakinan yang diambil. <br><br>
-            Sebuah perkara harus jelas berdasarkan keyakinan dan ketenangan. Tidak ada harganya keraguan dan kebimbangan.<br><br>
-            Berhati-hati dari sikap meremehkan terhadap urusan agama dan masalah bid\'ah.<br><br>
-            Siapa yang membiasakan perkara syubhat maka dia akan berani melakukan perbuatan yang haram.<br><br>
-        ]]>
+        <item>
+            1. Termasuk sifat-sifat orang muslim adalah dia menyibukkan dirinya dengan perkara-perkara yang mulia serta menjauhkan perkara yang hina dan rendah. \n\n
+            2. Pendidikan bagi diri dan perawatannya dengan meninggalkan apa yang tidak bermanfaat di dalamnya. \n\n
+            3. Menyibukkkan diri dengan sesuatu yang tidak bermanfaat adalah kesia-siaan dan merupakan pertanda kelemahan iman. \n\n
+            4. Anjuran untuk memanfaatkan waktu dengan sesuatu yang manfaatnya kembali kepada diri sendiri bagi dunia maupun akhirat. \n\n
+            5. Ikut campur terhadap sesuatu yang bukan urusannya dapat mengakibatkan kepada perpecahan dan pertikaian di antara manusia.
         </item>
-        <item><![CDATA[
-            Termasuk sifat-sifat orang muslim adalah dia menyibukkan dirinya dengan perkara-perkara yang mulia serta menjauhkan perkara yang hina dan rendah. <br><br>
-            Pendidikan bagi diri dan perawatannya dengan meninggalkan apa yang tidak bermanfaat di dalamnya. <br><br>
-            Menyibukkkan diri dengan sesuatu yang tidak bermanfaat adalah kesia-siaan dan merupakan pertanda kelemahan iman. <br><br>
-            Anjuran untuk memanfaatkan waktu dengan sesuatu yang manfaatnya kembali kepada diri sendiri bagi dunia maupun akhirat. <br><br>
-            Ikut campur terhadap sesuatu yang bukan urusannya dapat mengakibatkan kepada perpecahan dan pertikaian di antara manusia.
-        ]]>
+        <item>
+            1. Seorang mu’min dengan mu’min yang lainnya bagaikan satu jiwa, jika dia mencintai saudaranya maka seakan-akan dia mencintai dirinya sendiri. \n\n
+            2. Menjauhkan perbuatan hasad (dengki) dan bahwa hal tersebut bertentangan dengan kesempurnaan iman. \n\n
+            3. Iman dapat bertambah dan berkurang, bertambah dengan ketaatan dan berkurang dengan kemaksiatan. \n\n
+            4. Anjuran untuk menyatukan hati.
         </item>
-        <item><![CDATA[
-            Seorang mu’min dengan mu’min yang lainnya bagaikan satu jiwa, jika dia mencintai saudaranya maka seakan-akan dia mencintai dirinya sendiri. <br><br>
-            Menjauhkan perbuatan hasad (dengki) dan bahwa hal tersebut bertentangan dengan kesempurnaan iman. <br><br>
-            Iman dapat bertambah dan berkurang, bertambah dengan ketaatan dan berkurang dengan kemaksiatan. <br><br>
-            Anjuran untuk menyatukan hati.
-        ]]>
+        <item>
+            1. Tidak boleh menumpahkan darah kaum muslimin kecuali dengan tiga sebab, yaitu: zina muhshon (orang yang sudah menikah), membunuh manusia dengan sengaja dan meninggalkan agamanya (murtad) berpisah dari jamaah kaum muslimin. \n\n
+            2. Islam sangat menjaga kehormatan, nyawa dan agama dengan menjatuhkan hukuman mati kepada mereka yang mengganggunya seperti dengan melakukan zina, pembunuhan dan murtad. \n\n
+            3. Sesungguhnya agama yang disepakati adalah yang dipegang oleh jamaah kaum muslimin, maka wajib dijaga dan tidak boleh keluar darinya. \n\n
+            4. Hukum pidana dalam Islam sangat keras, hal itu bertujuan untuk mencegah (preventif) dan melindungi. \n\n
+            5. Pendidikan bagi masyarakat untuk takut kepada Allah ta’ala dan selalu merasa terawasi oleh-Nya dalam keadaan tersembunyi atau terbuka sebelum dilaksanakannya hukuman.\n\n
+            6. Hadits di atas menunjukkan pentingnya menjaga kehormatan dan kesucian. \n\n
+            7. Dalam hadits tersebut merupakan ancaman bagi siapa yang membunuh manusia yang diharamkan oleh Allah ta’ala.
         </item>
-        <item><![CDATA[
-            Tidak boleh menumpahkan darah kaum muslimin kecuali dengan tiga sebab, yaitu: zina muhshon (orang yang sudah menikah), membunuh manusia dengan sengaja dan meninggalkan agamanya (murtad) berpisah dari jamaah kaum muslimin. <br><br>
-            Islam sangat menjaga kehormatan, nyawa dan agama dengan menjatuhkan hukuman mati kepada mereka yang mengganggunya seperti dengan melakukan zina, pembunuhan dan murtad. <br><br>
-            Sesungguhnya agama yang disepakati adalah yang dipegang oleh jamaah kaum muslimin, maka wajib dijaga dan tidak boleh keluar darinya. <br><br>
-            Hukum pidana dalam Islam sangat keras, hal itu bertujuan untuk mencegah (preventif) dan melindungi. <br><br>
-            Pendidikan bagi masyarakat untuk takut kepada Allah ta’ala dan selalu merasa terawasi oleh-Nya dalam keadaan tersembunyi atau terbuka sebelum dilaksanakannya hukuman.<br><br>
-            Hadits di atas menunjukkan pentingnya menjaga kehormatan dan kesucian. <br><br>
-            Dalam hadits tersebut merupakan ancaman bagi siapa yang membunuh manusia yang diharamkan oleh Allah ta’ala.
-        ]]>
+        <item>
+            1. Iman terkait langsung dengan kehidupan sehari-hari. \n\n
+            2. Islam menyerukan kepada sesuatu yang dapat menumbuhkan rasa cinta dan kasih sayang dikalangan individu masyarakat muslim.\n\n
+            3. Termasuk kesempurnaan iman adalah perkataan yang baik dan diam dari selainnya.\n\n
+            4. Berlebih-lebihan dalam pembicaraan dapat menyebabkan kehancuran, sedangkan menjaga pembicaraan merupakan jalan keselamatan. \n\n
+            5. Islam sangat menjaga agar seorang muslim berbicara apa yang bermanfaat dan mencegah perkataan yang diharamkan dalam setiap kondisi. \n\n
+            6. Tidak memperbanyak pembicaraan yang diperbolehkan, karena hal tersebut dapat menyeret kepada perbuatan yang diharamkan atau yang makruh. \n\n
+            7. Termasuk kesempurnaan iman adalah menghormati tetangga dan memperhatikan serta tidak menyakitinya. \n\n
+            8. Wajib berbicara saat dibutuhkan, khususnya jika bertujuan menerangkan yang haq dan beramar ma’ruf nahi munkar. \n\n
+            9. Memuliakan tamu termasuk di antara kemuliaan akhlak dan pertanda komitmennya terhadap syariat Islam. \n\n
+            10. Anjuran untuk mempergauli orang lain dengan baik.
         </item>
-        <item><![CDATA[
-            Iman terkait langsung dengan kehidupan sehari-hari. <br><br>
-            Islam menyerukan kepada sesuatu yang dapat menumbuhkan rasa cinta dan kasih sayang dikalangan individu masyarakat muslim.<br><br>
-            Termasuk kesempurnaan iman adalah perkataan yang baik dan diam dari selainnya.<br><br>
-            Berlebih-lebihan dalam pembicaraan dapat menyebabkan kehancuran, sedangkan menjaga pembicaraan merupakan jalan keselamatan. <br><br>
-            Islam sangat menjaga agar seorang muslim berbicara apa yang bermanfaat dan mencegah perkataan yang diharamkan dalam setiap kondisi. <br><br>
-            Tidak memperbanyak pembicaraan yang diperbolehkan, karena hal tersebut dapat menyeret kepada perbuatan yang diharamkan atau yang makruh. <br><br>
-            Termasuk kesempurnaan iman adalah menghormati tetangga dan memperhatikan serta tidak menyakitinya.<br><br>
-            Wajib berbicara saat dibutuhkan, khususnya jika bertujuan menerangkan yang haq dan beramar ma’ruf nahi munkar. <br><br>
-            Memuliakan tamu termasuk di antara kemuliaan akhlak dan pertanda komitmennya terhadap syariat Islam. <br><br>
-            Anjuran untuk mempergauli orang lain dengan baik.
-        ]]>
+        <item>
+            1. Anjuran bagi setiap muslim untuk memberikan nasihat dan mengenal perbuatan-perbuatan kebajikan, menambah wawasan ilmu yang bermanfaat serta memberikan nasihat yang baik. \n\n
+            2. Larangan marah. \n\n
+            3. Dianjurkan untuk mengulangi pembicaraan hingga pendengar menyadari pentingnya dan kedudukannya.
         </item>
-        <item><![CDATA[
-            Anjuran bagi setiap muslim untuk memberikan nasihat dan mengenal perbuatan-perbuatan kebajikan, menambah wawasan ilmu yang bermanfaat serta memberikan nasihat yang baik. <br><br>
-            Larangan marah. <br><br>
-            Dianjurkan untuk mengulangi pembicaraan hingga pendengar menyadari pentingnya dan kedudukannya.
-        ]]>
+        <item>
+            1. Syariat Islam menuntut perbuatan ihsan kepada setiap makhluk termasuk di antaranya adalah hewan. \n\n
+            2. Tidak boleh menyiksa dan merusak tubuh sebagai sasaran dan tujuan, tidak juga boleh menyayat-nyayat orang yang dihukum qishash. \n\n
+            3. Termasuk ihsan juga adalah terhadap hewan ternak dan belas kasih terhadapnya. Tidak boleh membebaninya diluar kemampuannya serta tidak menyiksanya saat menyembelihnya.
         </item>
-        <item><![CDATA[
-            Syariat Islam menuntut perbuatan ihsan kepada setiap makhluk termasuk di antaranya adalah hewan. <br><br>
-            Tidak boleh menyiksa dan merusak tubuh sebagai sasaran dan tujuan, tidak juga boleh menyayat-nyayat orang yang dihukum qishash. <br><br>
-            Termasuk ihsan juga adalah terhadap hewan ternak dan belas kasih terhadapnya. Tidak boleh membebaninya diluar kemampuannya serta tidak menyiksanya saat menyembelihnya.
-        ]]>
+        <item>
+            1. Takwa kepada Allah merupakan kewajiban setiap muslim dan dia merupakan asas diterimanya amal shaleh. \n\n
+            2. Bersegera melakukan ketaatan setelah keburukan secara langsung, karena kebaikan akan menghapus keburukan. \n\n
+            3. Bersungguh-sungguh menghias diri dengan akhlak mulia.\n\n
+            4. Menjaga pergaulan yang baik merupakan kunci kesuksesan, kebahagiaan dan ketenangan di dunia dan akhirat. Hal tersebut dapat menghilangkan dampak negatif pergaulan.
         </item>
-        <item><![CDATA[
-            Takwa kepada Allah merupakan kewajiban setiap muslim dan dia merupakan asas diterimanya amal shaleh. <br><br>
-            Bersegera melakukan ketaatan setelah keburukan secara langsung, karena kebaikan akan menghapus keburukan. <br><br>
-            Bersungguh-sungguh menghias diri dengan akhlak mulia.<br><br>
-            Menjaga pergaulan yang baik merupakan kunci kesuksesan, kebahagiaan dan ketenangan di dunia dan akhirat. Hal tersebut dapat menghilangkan dampak negatif pergaulan.
-        ]]>
+        <item>
+            1. Perhatian Rasulullah shallallahu`alaihi wa sallam dalam mengarahkan umatnya serta menyiapkan generasi mu’min idaman. \n\n
+            2. Termasuk adab pengajaran adalah menarik perhatian pelajar agar timbul keinginannya terhadap pengetahuan sehingga hal tersebut lebih terkesan dalam dirinya. \n\n
+            3. Siapa yang konsekwen melaksanakan perintah-perintah Allah, nicsaya Allah akan menjaganya di dunia dan akhirat.\n\n
+            4. Beramal saleh serta melaksanakan perintah Allah dapat menolak bencana dan mengeluarkan seseorang dari kesulitan. \n\n
+            5. Tidak mengarahkan permintaan apapun (yang tidak dapat dilakukan makhluk) selain kepada Allah semata.\n\n
+            6. Manusia tidak akan mengalami musibah kecuali berdasarkan ketetapan Allah ta’ala. \n\n
+            7. Menghormati waktu dan menggunakannya untuk sesuatu yang bermanfaat sebagaimana Rasulullah shallallahu`alaihi wa sallam memanfaatkan waktunya saat beliau berkendaraan.
         </item>
-        <item><![CDATA[
-            Perhatian Rasulullah shallallahu`alaihi wa sallam dalam mengarahkan umatnya serta menyiapkan generasi mu’min idaman. <br><br>
-            Termasuk adab pengajaran adalah menarik perhatian pelajar agar timbul keinginannya terhadap pengetahuan sehingga hal tersebut lebih terkesan dalam dirinya. <br><br>
-            Siapa yang konsekwen melaksanakan perintah-perintah Allah, nicsaya Allah akan menjaganya di dunia dan akhirat.<br><br>
-            Beramal saleh serta melaksanakan perintah Allah dapat menolak bencana dan mengeluarkan seseorang dari kesulitan. <br><br>
-            Tidak mengarahkan permintaan apapun (yang tidak dapat dilakukan makhluk) selain kepada Allah semata.<br><br>
-            Manusia tidak akan mengalami musibah kecuali berdasarkan ketetapan Allah ta’ala. <br><br>
-            Menghormati waktu dan menggunakannya untuk sesuatu yang bermanfaat sebagaimana Rasulullah shallallahu`alaihi wa sallam memanfaatkan waktunya saat beliau berkendaraan.
-        ]]>
+        <item>
+            1. Malu merupakan tema yang telah disepakati oleh para nabi dan tidak terhapus ajarannya. \n\n
+            2. Jika seseorang telah meninggalkan rasa malu, maka jangan harap lagi (kebaikan) darinya sedikitpun. \n\n
+            3. Malu merupakan landasan akhlak mulia dan selalu bermuara kepada kebaikan. Siapa yang banyak malunya lebih banyak kebaikannya, dan siapa yang sedikit rasa malunya semakin sedikit kebaikannya. \n\n
+            4. Rasa malu merupakan prilaku dan dapat dibentuk. Maka setiap orang yang memiliki tanggung jawab hendaknya memperhatikan bimbingan terhadap mereka yang menjadi tanggung jawabnya. \n\n
+            5. Tidak ada rasa malu dalam mengajarkan hukum-hukum agama serta menuntut ilmu dan kebenaran. Allah ta’ala berfirman: “ Dan Allah tidak malu dari kebenaran “ (33 : 53). \n\n
+            6. Di antara manfaat rasa malu adalah ‘Iffah (menjaga diri dari perbuatan tercela) dan Wafa’ (menepati janji).\n\n
+            7. Rasa malu merupakan cabang iman yang wajib diwujudkan.
         </item>
-        <item><![CDATA[
-        ]]>
+        <item>
+            1. Iman kepada Allah ta’ala harus mendahului ketaatan. \n\n
+            2. Amal saleh dapat menjaga keimanan.\n\n
+            3. Iman dan amal saleh keduanya harus dilaksanakan. \n\n
+            4. Istiqomah merupakan derajat yang tinggi. \n\n
+            5. Keinginan yang kuat dari para shahabat dalam menjaga agamanya dan merawat keimanannya. \n\n
+            6. Perintah untuk istiqomah dalam tauhid dan ikhlas beribadah hanya kepada Allah semata hingga mati.
         </item>
-        <item><![CDATA[
-        ]]>
+        <item>
+            1. Setiap muslim dituntut untuk bertanya kepada ulama tentang syariat Islam, tentang kewajibannya dan apa yang dihalalkan dan diharamkan baginya jika hal tersebut tidak diketahuinya. \n\n
+            2. Penghalalan dan pengharaman merupan aturan syariat, tidak ada yang berhak menentukannya kecuali Allah ta’ala. \n\n
+            3. Amal saleh merupakan sebab masuknya seseorang ke dalam syurga. \n\n
+            4. Keinginan dan perhatian yang besar dari para shahabat serta kerinduan mereka terhadap syurga serta upaya mereka dalam mencari jalan untuk sampai ke sana.
+        </item>
+        <item>
+            1. Iman merupakan ucapan dan perbuatan, bertambah dengan amal saleh dan keta’atan dan berkurang dengan maksiat dan dosa. \n\n
+            2. Amal perbuatan akan ditimbang pada hari kiamat dan dia memiliki beratnya. \n\n
+            3. Bersuci merupakan syarat sahnya ibadah, karena itu harus diperhatikan. \n\n
+            4. Menjaga shalat akan mendatangkan petunjuk dan memperbaiki kondisi seorang muslim terhadap manusia, membedakannya dengan akhlaknya dan perilakunya, kewara’annya dan ketakwaannya. \n\n
+            5. Seruan untuk berinfaq pada jalan-jalan kebaikan dan bersegera melakukannya di mana hal tersebut merupakan pertanda benarnya keimanan. \n\n
+            6. Anjuran untuk bersabar tatkala mengalami musibah, khususnya apa yang dialami seorang muslim karena perbuatan amar ma’ruf nahi munkar. \n\n
+            7. Semangat membaca Al Quran dengan pemahaman dan men-tadabbur-kan (merenungkan) ma’nanya, mengamalkan kandungan-kandungannya karena hal tersebut dapat memberi syafaat bagi seorang hamba pada hari kiamat. \n\n
+            8. Seorang muslim harus menggunakan waktu dan umurnya dalam keta’atan kepada Allah ta’ala serta tidak mengabaikan karena kesibukan lainnya.
+        </item>
+        <item>
+            1. Menegakkan keadilan di antara manusia serta haramnya kezaliman di antara mereka merupakan tujuan dari ajaran Islam yang paling penting. \n\n
+            2. Wajib bagi setiap orang untuk memudahkan jalan petunjuk dan memintanya kepada Allah ta’ala. \n\n
+            3. Semua makhluk sangat tergantung kepada Allah dalam mendatangkan kebaikan dan menolak keburukan terhadap dirinya baik dalam perkara dunia maupun akhirat. \n\n
+            4. Pentingnya istighfar dari perbuatan dosa dan sesungguhnya Allah ta’ala akan mengampuninya. \n\n
+            5. Lemahnya makhluk dan ketidakmampuan mereka dalam mendatangkan kecelakaan dan kemanfaatan. \n\n
+            6. Wajib bagi setiap mu’min untuk bersyukur kepada Allah ta’ala atas ni’mat dan taufiq-Nya. \n\n
+            7. Sesungguhnya Allah ta’ala menghitung semua perbuatan seorang hamba dan membalasnya. \n\n
+            8. Dalam hadits terdapat petunjuk untuk mengevaluasi diri (muhasabah) serta penyesalan atas dosa-dosa
+        </item>
+        <item>
+            1. Sikap bijak dalam menanggapi berbagai kondisi serta mendatangkan kabar gembira bagi jiwa serta menenangkan perasaan. \n\n
+            2. Para shahabat berlomba-lomba untuk berbuat kebaikan. \n\n
+            3. Luasnya keutamaan Allah ta’ala serta banyaknya pintu-pintu kebaikan yang dibuka bagi hamba-Nya. \n\n
+            4. Semua bentuk zikir sesungguhnya merupakan shadaqah yang dikeluarkan seseorang untuk dirinya. \n\n
+            5. Kebiasaan-kebiasaan mubah dan penyaluran syahwat yang disyariatkan dapat menjadi ketaatan dan ibadah jika diiringi dengan niat saleh. \n\n
+            6. Anjuran untuk meminta sesuatu yang dapat bermanfaat bagi seorang muslim dan yang dapat meningkatkan dirinya ke derajat yang lebih sempurna. \n\n
+            7. Di dalam hadits ini terdapat keutamaan orang kaya yang bersyukur dan orang fakir yang bersabar. \n\n
+            8. Iri terhadap kebaikan orang lain (agar dirinya seperti orang tersebut) adalah hal yang diperbolehkan dalam agama.\n\n
+            9. Sebagaimana menggunakan sesuatu yang tidak diperbolehkan syariat mendapatkan dosa maka menggunakannya sesuai dengan petunjuk syariat akan mendatangkan pahala.
+        </item>
+        <item>
+            1. Bersyukur kepada Allah ta’ala setiap hari atas kesehatan anggota badan. \n\n
+            2. Allah telah menjadikan -sebagai rasa syukur terhadap ni’mat-Nya- setiap anggota badan untuk menolong hamba-hamba Allah ta’ala, bersedekah kepada mereka dengan menggunakannya sesuai kemaslahatannya. \n\n
+            3. Temasuk sedekah adalah: Menahan tangan dan lisan untuk tidak menyakiti orang lain, justru seharusnya digunakan untuk menunaikan hak-hak setiap muslim. \n\n
+            4. Jasad harus dikeluarkan zakatnya sebagaimana harta ada zakatnya. Zakat badan adalah melakukan perbuatan baik, bersedekah dan pintu-pintunya banyak. \n\n
+            5. Anjuran untuk mendamaikan kedua belah pihak, tolong-menolong, mengucapkan kalimat yang baik, berjalan menuju shalat dan menyingkirkan penghalang dari jalan. \n\n
+            6. Anjuran untuk membersihkan sarana-sarana umum. \n\n
+            7. Anjuran untuk melakukan keadilan, karena dengan keadilanlah ditegakkan langit dan bumi.
+        </item>
+        <item>
+            1. Tanda perbuatan dosa adalah timbulnya keragu-raguan dalam jiwa dan tidak suka kalau hal itu diketahui orang lain. \n\n
+            2. Siapa yang ingin melakukan suatu perbuatan maka hendaklah dia menanyakan hal tersebut pada dirinya.\n\n
+            3. Anjuran untuk berakhlak mulia karena akhlak yang mulia termasuk unsur kebaikan yang sangat besar. \n\n
+            4. Hati seorang mu’min akan tenang dengan perbuatan yang halal dan gusar dengan perbuatan haram. \n\n
+            5. Melihat terlebih dahulu ketetapan hukum sebelum mengambil tindakan. Ambillah yang paling dekat dengan ketakwaan dan kewara’an dalam agama.\n\n
+            6. Rasulullah shallallahu`alaihi wa sallam ketika menyampaikan sesuatu kepada para shahabatnya selalu mempertimbangkan kondisi mereka. \n\n
+            7. Perhatian Islam terhadap pendidikan sisi agama yang bersifat internal dalam hati orang beriman dan meminta keputusannya sebelum mengambil tindakan.
+        </item>
+        <item>
+            1. Bekas yang mendalam dari nasehat Rasulullah shallallahu`alaihi wa sallam  dalam jiwa para shahabat. Hal tersebut merupakan tauladan bagi para da’i di jalan Allah ta’ala. \n\n
+            2. Taqwa merupakan yang paling penting untuk disampaikan seorang muslim kepada muslim lainnya, kemudian mendengar dan ta’at kepada pemerintah selama tidak terdapat di dalamnya maksiat. \n\n
+            3. Keharusan untuk berpegang teguh terhadap sunnah Nabi dan sunnah Khulafaurrasyidin, karena di dalamnya terdapat kemenangan dan kesuksesan, khususnya tatkala banyak terjadi perbedaan dan perpecahan. \n\n
+            4. Hadits ini menunjukkan tentang sunnahnya memberikan wasiat saat berpisah karena di dalamnya terdapat kebaikan dan kebahagiaan dunia dan akhirat. \n\n
+            5. Larangan untuk melakukan hal yang baru dalam agama (bid’ah) yang tidak memiliki landasan dalam agama.
+        </item>
+        <item>
+            1. Perhatian shahabat yang sangat besar untuk melakukan amal yang dapat memasukkan mereka ke syurga. \n\n
+            2. Amal perbuatan merupakan sebab masuk syurga jika Allah menerimanya dan hal ini tidak bertentangan dengan sabda Rasulullah shallallahu`alaihi wa sallam “Tidak masuk syurga setiap kalian dengan amalnya”. Makna hadits tersebut adalah bahwa amal dengan sendirinya tidak berhak memasukkan seseorang ke syurga selama Allah belum menerimanya dengan karunia-Nya dan Rahmat-Nya. \n\n
+            3. Mentauhidkan Allah dan menunaikan kewajiban adalah sebab masuknya seseorang ke dalam syurga. \n\n
+            4. Shalat sunnah setelah shalat fardhu merupakan sebab kecintaan Allah ta’ala kepada hambanya. \n\n
+            5. Bahaya lisan dan perbuatannya akan dibalas dan bahwa dia mencampakkan seseorang ke neraka karena ucapannya.
+        </item>
+        <item>
+            Hadits yang lemah kedudukannya dan tidak dapat dijadikan sebagai dalil.
+        </item>
+        <item>
+            1. Menuntut kecukupan terhadap dunia adalah perkara wajib, sedang zuhud adalah tidak adanya keter-gantungan dan terpusatnya perhatian terhadapnya. \n\n
+            2. Bersikap qanaah terhadap rizki yang halal dan ridha terhadapnya serta bersikap ‘iffah dari perbuatan haram dan hati-hati terhadap syubhat. \n\n
+            3. Jiwa yang merasa cukup dan iffah serta berkorban dengan harta dan jiwa di jalan Allah merupakan hakekat zuhud.
+        </item>
+        <item>
+            1. Ajaran Islam sangat mementingkan keselamatan pribadi dan orang lain.\n\n
+            2. Termasuk sesuatu yang diharamkan adalah sesuatu yang berbahaya, seperti: rokok, narlotik dll.
+        </item>
+        <item>
+            1. Seorang hakim harus meminta dari kedua orang yang bersengketa sesuatu yang dapat menguatkan pengakuan mereka. \n\n
+            2. Seorang hakim tidak boleh memutuskan sebuah perkara dengan menghalalkan yang haram dan mengharamkan yang halal. \n\n
+            3. Pada dasarnya seseorang bebas dari tuduhan hingga terbukti perbuatan jahatnya. \n\n
+            4. Seorang hakim harus berusaha keras untuk mengetahui permasalahan sebenarnya dan menjelaskan hukumnya berdasarkan apa yang tampak baginya. \n\n
+            5. Bersumpah hanya diperbolehkan atas nama Allah.
+        </item>
+        <item>
+            1. Menentang pelaku kebatilan dan menolak kemunkaran adalah kewajiban yang dituntut dalam ajaran Islam atas setiap muslim sesuai kemampuan dan kekuatannya. \n\n
+            2. Ridha terhadap kemaksiatan termasuk di antara dosa-dosa besar.\n\n
+            3. Sabar menanggung kesulitan dan amar ma’ruf nahi munkar. \n\n
+            4. Amal merupakan buah dari iman, maka menyingkirkan kemunkaran juga merupakan buahnya keimanan. \n\n
+            5. Mengingkari dengan hati diwajibkan kepada setiap muslim, sedangkan pengingkaran dengan tangan dan lisan berdasarkan kemampuannya.
+        </item>
+        <item>
+            1. Larangan untuk saling dengki. \n\n
+            2. Larangan untuk berbuat keji dan menipu dalam urusan jual beli. \n\n
+            3. Diharamkan untuk memutuskan hubungan terhadap muslim.\n\n Sebaliknya harus dijaga persaudaraan dan hak-haknya karena Allah ta’ala. \n\n
+            4. Islam bukan hanya aqidah dan ibadah saja, tetapi juga di dalamnya terdapat urusan akhlak dan muamalah. \n\n
+            5. Hati merupakan sumber rasa takut kepada Allah ta’ala. \n\n
+            6. Taqwa merupakan barometer keutamaan dan timbangan seseorang. \n\n
+            7. Islam memerangi semua akhlak tercela karena hal tersebut berpengaruh negatif dalam masyarakat Islam.
+        </item>
+        <item>
+            1. Siapa yang membantu seorang muslim dalam menyelesaikan kesulitannya, maka akan dia dapatkan pada hari kiamat sebagai tabungannya yang akan memudahkan kesulitannya di hari yang sangat sulit tersebut. \n\n
+            2. Sesungguhnya pembalasan disisi Allah ta’ala sesuai dengan jenis perbuatannya. \n\n
+            3. Berbuat baik kepada makhluk merupan cara untuk mendapatkan kecintaan Allah ta’ala. \n\n
+            4. Meluruskan niat dalam rangka mencari ilmu dan ikhlas di dalamnya agar tidak menggugurkan pahala sehingga amal dan usahanya sia-sia. \n\n
+            5. Memohon pertolongan kepada Alla ta’ala dan kemudahan dari-Nya, karena ketaatan tidak akan terlaksana kecuali karena kemudahan dan kasih sayang-Nya. \n\n
+            6. Selalu membaca Al Quran, memahaminya dan mengamalkannya. \n\n
+            7. Keutamaan duduk di rumah Allah untuk mengkaji ilmu.
+        </item>
+        <item>
+            1. Kasih sayang Allah terhadap hamba-Nya yang beriman sangat luas dan ampunannya menyeluruh sedang pemberian-Nya tidak terbatas. \n\n
+            2. Sesungguhnya apa yang tidak kuasa oleh manusia, dia tidak diperhitungkan dan dipaksa menunaikannya. \n\n
+            3. Allah tidak menghitung keinginan hati dan kehendak perbuatan manusia kecuali jika kemudian dibuktikan dengan amal perbuatan dan praktek. \n\n
+            4. Seorang muslim hendaklah meniatkan perbuatan baik selalu dan membuktikannya, diharapkan dengan begitu akan ditulis pahala dan ganjarannya dan dirinya telah siap untuk melaksanakannya jika sebabnya telah tersedia. \n\n
+            5. Semakin besar tingkat keikhlasan semakin berlipat-lipat pahala dan ganjaran.
+        </item>
+        <item>
+            1. Besarnya kedudukan seorang wali, karena dirinya diarahkan dan dibela oleh Allah ta’ala. \n\n
+            2. Perbuatan-Perbuatan fardhu merupakan perbuatan-perbuatan yang dicintai Allah ta’ala. \n\n
+            3. Siapa yang kontinyu melaksanakan amalan sunnah dan menghindar dari perbuatan maksiat maka dia akan meraih kecintaan Allah ta’ala . \n\n
+            4. Jika Allah ta’ala telah mencintai seseorang maka Dia akan mengabulkan doanya.
+        </item>
+        <item>
+            1. Allah ta’ala mengutamakan umat ini dengan menghilangkan berbagai kesulitan dan memaafkan dosa kesalahan dan lupa. \n\n
+            2. Sesungguhnya Allah ta’ala tidak menghukum seseorang kecuali jika dia sengaja berbuat maksiat dan hatinya telah berniat untuk melakukan penyimpangan dan meninggalkan kewajiban dengan sukarela. \n\n
+            3. Manfaat adanya kewajiban adalah untuk mengetahui siapa yang ta’at dan siapa yang membangkang. \n\n
+            4. Ada beberapa perkara yang tidak begitu saja dimaafkan. Misalnya seseorang melihat najis di bajunya akan tetapi dia mengabaikan untuk menghilangkannya segera, kemudian dia shalat dengannya karena lupa, maka wajib baginya mengqhada shalat tersebut. Contoh seperti itu banyak terdapat dalam kitab-kitab fiqh.
+        </item>
+        <item>
+            1. Bersegera mengerjakan pekerjaan baik dan memperbanyak ketaatan, tidak lalai dan menunda-nunda karena dia tidak tahu kapan datang ajalnya. \n\n
+            2. Menggunakan berbagai kesempatan dan momentum sebelum hilangnya berlalu. \n\n
+            3. Zuhud di dunia berarti tidak bergantung kepadanya hingga mengabaikan ibadah kepada Allah ta’ala untuk kehidupan akhirat. \n\n
+            4. Hati-hati dan khawatir terhadap azab Allah adalah sikap seorang musafir yang bersungguh-sungguh dan hati –hati agar tidak tersesat.\n\n
+            5. Waspada dari teman yang buruk hingga tidak terhalang dari tujuannya. \n\n
+            6. Pekerjaan dunia dituntut untuk menjaga jiwa dan mendatangkan manfaat, seorang muslim hendaknya menggunakan semua itu untuk tujuan akhirat.\n\n
+            7. Bersungguh-sungguh menjaga waktu dan mempersiapkan diri untuk kematian dan bersegera bertaubat dan beramal shaleh. \n\n
+            8. Rasulullah memegang kedua pundak Abdullah bin Umar, adalah agar dia memperhatikan apa yang akan beliau sampaikan. Menunjukkan bahwa seorang pelajar harus diajarkan tentang perhatian gurunya kepadanya dan kesungguhannya untuk menyampaikan ilmu ke dalam jiwanya. Hal ini dapat menyebabkan masuknya ilmu, sebagaimana hal itu juga menunjukkan kecintaan Rasulullah kepada Abdullah bin Umar, karena hal tersebut pada umumnya dilakukan oleh seseorang kepada siapa yang dicintainya.
+        </item>
+        <item>
+            Hadits yang lemah kedudukannya dan tidak dapat dijadikan sebagai dalil.
+        </item>
+        <item>
+            1. Berdoa diperintahkan dan dijanjikan untuk dikabul-kan. \n\n
+            2. Maaf Allah dan ampunannya lebih luas dan lebih besar dari dosa seorang hamba jika dia minta ampun dan bertaubat. \n\n
+            3. Berbaik sangka kepada Allah ta’ala, Dialah semata Yang Maha Pengampun bagi orang yang bertaubat dan istighfar. \n\n
+            4. Tauhid adalah pokok ampunan dan sebab satu-satunya untuk meraihnya. \n\n
+            5. Membuka pintu harapan bagi ahli maksiat untuk segera bertaubat dan menyesal betapapun banyak dosanya.
         </item>
     </string-array>
 
@@ -610,4 +769,5 @@
     <string name="share">Share</string>
     <string name="ok">Ok</string>
     <string name="cancel">Batal</string>
+    <string name="syarah">Syarah :</string>
 </resources>

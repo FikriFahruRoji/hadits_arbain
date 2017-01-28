@@ -1,42 +1,39 @@
 package id.barkost.haditsarbain.activities;
 
-import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.Editable;
 import android.text.Html;
-import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import id.barkost.haditsarbain.listener.AppBarStateChangeListener;
 import id.barkost.haditsarbain.R;
 import id.barkost.haditsarbain.dbHelper.DatabaseHelper;
+import id.barkost.haditsarbain.util.AppBarStateChangeListener;
 
 public class HaditsActivity extends AppCompatActivity {
 
     public static int id = 0;
     private int fav;
     private DatabaseHelper myDb;
-    private TextView txHadits, txTerjemah, txNo, txLatin, txFootnote;
-    private ImageView visibleHadits, visibleTerjemah;
-    private Button mediaPlay, mediaNext, mediaPrev, mediaRepeat;
+    private TextView txHadits, txTerjemah, txNo, txLatin, txFootnote, txSyarah;
+    private ImageView visibleHadits, visibleTerjemah, visibleSyarah;
+    private Button mediaPlay, mediaNext, mediaPrev, mediaStop;
     private Toolbar toolbar;
+    private MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,13 +64,15 @@ public class HaditsActivity extends AppCompatActivity {
         txHadits = (TextView) findViewById(R.id.tx_det_hadits);
         txTerjemah = (TextView) findViewById(R.id.tx_det_terjemah);
         txFootnote = (TextView) findViewById(R.id.tv_det_footnote);
+        txSyarah = (TextView) findViewById(R.id.tv_det_syarah);
         visibleHadits = (ImageView) findViewById(R.id.img_visible_hadits);
         visibleTerjemah = (ImageView) findViewById(R.id.img_visible_terjemah);
+        visibleSyarah = (ImageView) findViewById(R.id.img_visible_syarah);
 
         visibleHadits.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (visibleHadits.getDrawable().getConstantState() == getResources().getDrawable( R.drawable.text_show).getConstantState()) {
+                if (visibleHadits.getDrawable().getConstantState() == getResources().getDrawable(R.drawable.text_show).getConstantState()) {
                     visibleHadits.setImageDrawable(getResources().getDrawable(R.drawable.text_hide));
                     txHadits.setVisibility(View.VISIBLE);
                 } else {
@@ -82,11 +81,10 @@ public class HaditsActivity extends AppCompatActivity {
                 }
             }
         });
-
         visibleTerjemah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (visibleTerjemah.getDrawable().getConstantState() == getResources().getDrawable( R.drawable.text_show).getConstantState()) {
+                if (visibleTerjemah.getDrawable().getConstantState() == getResources().getDrawable(R.drawable.text_show).getConstantState()) {
                     visibleTerjemah.setImageDrawable(getResources().getDrawable(R.drawable.text_hide));
                     txTerjemah.setVisibility(View.VISIBLE);
                     txFootnote.setVisibility(View.VISIBLE);
@@ -94,6 +92,18 @@ public class HaditsActivity extends AppCompatActivity {
                     visibleTerjemah.setImageDrawable(getResources().getDrawable(R.drawable.text_show));
                     txTerjemah.setVisibility(View.GONE);
                     txFootnote.setVisibility(View.GONE);
+                }
+            }
+        });
+        visibleSyarah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (visibleSyarah.getDrawable().getConstantState() == getResources().getDrawable(R.drawable.text_show).getConstantState()) {
+                    visibleSyarah.setImageDrawable(getResources().getDrawable(R.drawable.text_hide));
+                    txSyarah.setVisibility(View.VISIBLE);
+                } else {
+                    visibleSyarah.setImageDrawable(getResources().getDrawable(R.drawable.text_show));
+                    txSyarah.setVisibility(View.GONE);
                 }
             }
         });
@@ -124,6 +134,37 @@ public class HaditsActivity extends AppCompatActivity {
                 overridePendingTransition(R.anim.slide_from_left, R.anim.slide_to_right);
             }
         });
+        mediaStop = (Button) findViewById(R.id.btn_media_stop);
+        mediaStop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mediaPlayer.seekTo(-1);
+                mediaPlayer.pause();
+                mediaPlay.setBackground(getResources().getDrawable(R.drawable.media_play));
+            }
+        });
+        mediaPlay = (Button) findViewById(R.id.btn_media_play);
+        mediaPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (mediaPlayer != null) {
+                    if (mediaPlayer.isPlaying()) {
+                        mediaPlay.setBackground(getResources().getDrawable(R.drawable.media_play));
+                        mediaPlayer.pause();
+                    } else {
+                        mediaPlay.setBackground(getResources().getDrawable(R.drawable.media_pause));
+                        mediaPlayer.start();
+                    }
+                }
+            }
+        });
+
+
+        if (id == 1) {
+            mediaPrev.setEnabled(false);
+        } else if (id == 42) {
+            mediaNext.setEnabled(false);
+        }
 
         Typeface face;
         face = Typeface.createFromAsset(getAssets(), "font.otf");
@@ -135,15 +176,21 @@ public class HaditsActivity extends AppCompatActivity {
         if (menu.getCount() == 0) {
             return;
         }
-
         while (menu.moveToNext()) {
             txNo.setText(Html.fromHtml("Hadits ke - " + Integer.toString(menu.getInt(0))));
             txLatin.setText(Html.fromHtml(menu.getString(1)));
             txHadits.setText(Html.fromHtml(menu.getString(3)));
             txTerjemah.setText(Html.fromHtml(menu.getString(4)));
-            txFootnote.setText(Html.fromHtml(menu.getString(5)));
+            txFootnote.setText(Html.fromHtml(menu.getString(6)));
+            txSyarah.setText(menu.getString(5));
             fav = menu.getInt(6);
+            mediaPlayer = MediaPlayer.create(HaditsActivity.this, menu.getInt(7));
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        finish();
     }
 
     @Override
@@ -176,18 +223,21 @@ public class HaditsActivity extends AppCompatActivity {
             builder.setCancelable(true);
             builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
-                    String texthadits = "", texttranslate = "";
+                    String texthadits = "", texttranslate = "", textsyarah = "";
 
-                    if (hadits.isChecked() == true ){
-                        texthadits = txHadits.getText().toString();
+                    if (hadits.isChecked() == true) {
+                        texthadits = getResources().getString(R.string.hadits) + "\n" + txHadits.getText().toString() + "\n\n";
                     }
-                    if (translate.isChecked() == true ){
-                        texttranslate = "\n\n" + txTerjemah.getText().toString();
+                    if (translate.isChecked() == true) {
+                        texttranslate = getResources().getString(R.string.terjemah) + "\n" + txTerjemah.getText().toString() + "\n" + txFootnote.getText().toString() + "\n\n";
+                    }
+                    if (syarah.isChecked() == true) {
+                        textsyarah = getResources().getString(R.string.syarah) + "\n" + txSyarah.getText().toString() + "\n\n";
                     }
 
                     Intent sendIntent = new Intent();
                     sendIntent.setAction(Intent.ACTION_SEND);
-                    sendIntent.putExtra(Intent.EXTRA_TEXT, texthadits + texttranslate);
+                    sendIntent.putExtra(Intent.EXTRA_TEXT, texthadits + texttranslate + textsyarah);
                     sendIntent.setType("text/plain");
                     startActivity(sendIntent);
                 }
@@ -205,4 +255,22 @@ public class HaditsActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        if (mediaPlayer != null) mediaPlayer.release();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        if (mediaPlayer != null) mediaPlayer.pause();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+
 }

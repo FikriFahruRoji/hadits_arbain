@@ -37,6 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="20dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -82,11 +83,11 @@
                         android:background="@drawable/media_play"/>
 
                     <Button
-                        android:id="@+id/btn_media_repeat"
+                        android:id="@+id/btn_media_stop"
                         android:layout_margin="20dp"
-                        android:layout_width="30dp"
-                        android:layout_height="35dp"
-                        android:background="@drawable/media_repeat"/>
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/media_stop"/>
 
                     <Button
                         android:id="@+id/btn_media_next"

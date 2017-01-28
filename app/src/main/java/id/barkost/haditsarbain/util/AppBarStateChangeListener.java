@@ -1,4 +1,4 @@
-package id.barkost.haditsarbain.listener;
+package id.barkost.haditsarbain.util;
 
 import android.support.design.widget.AppBarLayout;
 
