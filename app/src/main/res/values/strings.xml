@@ -771,9 +771,7 @@
     <string name="cancel">Batal</string>
     <string name="syarah">Syarah :</string>
     <string name="action_about">About</string>
-
-
-
+    <string name="action_rate">Rate Me</string>
 
 
     <string-array name="listTextSize">

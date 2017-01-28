@@ -1,10 +1,12 @@
 package id.barkost.haditsarbain.activities;
 
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
@@ -17,6 +19,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
+
+import com.yarolegovich.lovelydialog.LovelyStandardDialog;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -169,8 +174,32 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_settings) {
             i = new Intent(MainActivity.this, SettingActivity.class);
             startActivity(i);
+        } else if (id == R.id.action_rate) {
+            Uri uri = Uri.parse("market://details?id=" + this.getPackageName());
+            Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
+            // To count with Play market backstack, After pressing back button,
+            // to taken back to our application, we need to add following flags to intent.
+            goToMarket.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY |
+                    Intent.FLAG_ACTIVITY_NEW_DOCUMENT |
+                    Intent.FLAG_ACTIVITY_MULTIPLE_TASK);
+            try {
+                startActivity(goToMarket);
+            } catch (ActivityNotFoundException e) {
+                startActivity(new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("http://play.google.com/store/apps/details?id=" + this.getPackageName())));
+            }
+            
         } else if (id == R.id.action_about) {
 //            displaySharedPreferences();
+
+            new LovelyStandardDialog(this)
+                    .setTopColorRes(R.color.colorPrimary)
+                    .setButtonsColorRes(R.color.colorAccent)
+                    .setIcon(R.mipmap.ic_launcher)
+                    .setTitle(R.string.app_name)
+                    .setMessage("kjhckjsdhk")
+                    .setPositiveButton(android.R.string.ok, null)
+                    .show();
         }
 
         return super.onOptionsItemSelected(item);
