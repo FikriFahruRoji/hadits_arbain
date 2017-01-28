@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view, int position) {
                 Intent i = new Intent(MainActivity.this, HaditsActivity.class);
-                HaditsActivity.id = position+1;
+                HaditsActivity.ID = position + 1;
                 startActivity(i);
             }
 
@@ -147,10 +147,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }));
 
-        prepareMovieData();
-    }
-
-    private void prepareMovieData() {
         menuList.clear();
         Cursor menu = myDB.select_menu();
         while (menu.moveToNext()) {
@@ -169,10 +165,28 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-
+        Intent i;
         if (id == R.id.action_settings) {
-            return true;
+            i = new Intent(MainActivity.this, SettingActivity.class);
+            startActivity(i);
+        } else if (id == R.id.action_about) {
+//            displaySharedPreferences();
         }
+
         return super.onOptionsItemSelected(item);
     }
+
+//    private void displaySharedPreferences() {
+//        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
+//        String prefsHadits = prefs.getString("pref_hadits", "Sedang");
+//        String prefsTerjemah = prefs.getString("pref_terjemah", "Sedang");
+//        String prefsSyarah = prefs.getString("pref_syarah", "Sedang");
+//
+//        StringBuilder builder = new StringBuilder();
+//        builder.append(prefsHadits + "\n");
+//        builder.append(prefsTerjemah + "\n");
+//        builder.append(prefsSyarah);
+//
+//        Toast.makeText(this, builder, Toast.LENGTH_SHORT).show();
+//    }
 }

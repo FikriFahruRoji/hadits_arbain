@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:title="Settings" >
+        <ListPreference
+            android:entries="@array/listTextSize"
+            android:entryValues="@array/listTextSize"
+            android:key="pref_hadits"
+            android:summary="Sedang"
+            android:title="Ukuran Teks Hadits" />
+
+        <ListPreference
+            android:entries="@array/listTextSize"
+            android:entryValues="@array/listTextSize"
+            android:key="pref_terjemah"
+            android:summary="Sedang"
+            android:title="Ukuran Teks Terjemah" />
+
+        <ListPreference
+            android:entries="@array/listTextSize"
+            android:entryValues="@array/listTextSize"
+            android:key="pref_syarah"
+            android:summary="Sedang"
+            android:title="Ukuran Teks Syarah" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

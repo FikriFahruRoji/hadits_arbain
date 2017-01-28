@@ -21,7 +21,8 @@
         <activity
             android:name=".activities.HaditsActivity"
             android:label="@string/title_activity_hadits"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.SettingActivity"></activity>
     </application>
 
 </manifest>

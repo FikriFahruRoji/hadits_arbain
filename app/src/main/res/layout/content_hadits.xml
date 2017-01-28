@@ -56,7 +56,7 @@
                     android:padding="10dp"
                     android:text="asd"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="@dimen/textSizeMediumArabic" />
 
             </RelativeLayout>
 
@@ -105,7 +105,7 @@
                     android:padding="10dp"
                     android:text="asd"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="@dimen/textSizeMedium" />
 
                 <TextView
                     android:id="@+id/tv_det_footnote"
@@ -116,7 +116,7 @@
                     android:padding="10dp"
                     android:text="asd"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="@dimen/textSizeMedium" />
 
             </RelativeLayout>
 
@@ -164,7 +164,7 @@
                     android:padding="10dp"
                     android:text="asd"
                     android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textSize="@dimen/textSizeMedium" />
 
 
             </RelativeLayout>

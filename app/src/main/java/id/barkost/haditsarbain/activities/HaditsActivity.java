@@ -2,6 +2,7 @@ package id.barkost.haditsarbain.activities;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Typeface;
 import android.media.MediaPlayer;
@@ -9,6 +10,7 @@ import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.preference.PreferenceManager;
 import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.view.LayoutInflater;
@@ -26,10 +28,14 @@ import id.barkost.haditsarbain.util.AppBarStateChangeListener;
 
 public class HaditsActivity extends AppCompatActivity {
 
-    public static int id = 0;
+    public static int ID = 0;
+    public static int TEXT_HADITS_SIZE;
+    public static int TEXT_TRANSLATE_SIZE;
+    public static int TEXT_SYARAH_SIZE;
+
     private int fav;
     private DatabaseHelper myDb;
-    private TextView txHadits, txTerjemah, txNo, txLatin, txFootnote, txSyarah;
+    private TextView txNo, txLatin, txHadits, txHaditsHead, txTerjemah, txTerjemahHead, txSyarah, txSyarahHead, txFootnote;
     private ImageView visibleHadits, visibleTerjemah, visibleSyarah;
     private Button mediaPlay, mediaNext, mediaPrev, mediaStop;
     private Toolbar toolbar;
@@ -50,7 +56,7 @@ public class HaditsActivity extends AppCompatActivity {
             @Override
             public void onStateChanged(AppBarLayout appBarLayout, State state) {
                 if (state.name().equals("COLLAPSED")) {
-                    collapsingtoolbarlayout.setTitle("Hadits ke - " + Integer.toString(id + 1));
+                    collapsingtoolbarlayout.setTitle("Hadits ke - " + Integer.toString(ID + 1));
                 } else if (state.name().equals("EXPANDED")) {
                     collapsingtoolbarlayout.setTitle("");
                 } else if (state.name().equals("IDLE")) {
@@ -61,10 +67,17 @@ public class HaditsActivity extends AppCompatActivity {
 
         txNo = (TextView) findViewById(R.id.tv_det_no);
         txLatin = (TextView) findViewById(R.id.tv_det_latin);
+
         txHadits = (TextView) findViewById(R.id.tx_det_hadits);
+        txHaditsHead = (TextView) findViewById(R.id.tv_hadits);
         txTerjemah = (TextView) findViewById(R.id.tx_det_terjemah);
+        txTerjemahHead = (TextView) findViewById(R.id.tv_terjemah);
         txFootnote = (TextView) findViewById(R.id.tv_det_footnote);
         txSyarah = (TextView) findViewById(R.id.tv_det_syarah);
+        txSyarahHead = (TextView) findViewById(R.id.tv_syarah);
+
+        setTextSize();
+
         visibleHadits = (ImageView) findViewById(R.id.img_visible_hadits);
         visibleTerjemah = (ImageView) findViewById(R.id.img_visible_terjemah);
         visibleSyarah = (ImageView) findViewById(R.id.img_visible_syarah);
@@ -113,7 +126,7 @@ public class HaditsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(HaditsActivity.this, HaditsActivity.class);
-                id = id + 1;
+                ID = ID + 1;
                 startActivity(i);
                 finish();
                 overridePendingTransition(R.anim.slide_from_right, R.anim.slide_to_left);
@@ -124,10 +137,10 @@ public class HaditsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(HaditsActivity.this, HaditsActivity.class);
-                if (id == 1) {
-                    id = 1;
+                if (ID == 1) {
+                    ID = 1;
                 } else {
-                    id = id - 1;
+                    ID = ID - 1;
                 }
                 startActivity(i);
                 finish();
@@ -160,9 +173,9 @@ public class HaditsActivity extends AppCompatActivity {
         });
 
 
-        if (id == 1) {
+        if (ID == 1) {
             mediaPrev.setEnabled(false);
-        } else if (id == 42) {
+        } else if (ID == 42) {
             mediaNext.setEnabled(false);
         }
 
@@ -172,7 +185,7 @@ public class HaditsActivity extends AppCompatActivity {
         txFootnote.setTypeface(null, Typeface.ITALIC);
 
         myDb = new DatabaseHelper(this);
-        Cursor menu = myDb.select_single_data(String.valueOf(id));
+        Cursor menu = myDb.select_single_data(String.valueOf(ID));
         if (menu.getCount() == 0) {
             return;
         }
@@ -186,6 +199,50 @@ public class HaditsActivity extends AppCompatActivity {
             fav = menu.getInt(6);
             mediaPlayer = MediaPlayer.create(HaditsActivity.this, menu.getInt(7));
         }
+    }
+
+    public void setTextSize() {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(HaditsActivity.this);
+        String prefsHadits = prefs.getString("pref_hadits", "Sedang");
+        String prefsTerjemah = prefs.getString("pref_terjemah", "Sedang");
+        String prefsSyarah = prefs.getString("pref_syarah", "Sedang");
+
+        if (prefsHadits.equals("Kecil")) {
+            txHadits.setTextSize(getResources().getDimension(R.dimen.textSizeSmallArabic));
+            txHaditsHead.setTextSize(getResources().getDimension(R.dimen.textSizeSmall));
+        } else if (prefsHadits.equals("Sedang")) {
+            txHadits.setTextSize(getResources().getDimension(R.dimen.textSizeMediumArabic));
+            txHaditsHead.setTextSize(getResources().getDimension(R.dimen.textSizeMedium));
+        } else if (prefsHadits.equals("Besar")) {
+            txHadits.setTextSize(getResources().getDimension(R.dimen.textSizeLargeArabic));
+            txHaditsHead.setTextSize(getResources().getDimension(R.dimen.textSizeLarge));
+        }
+
+        if (prefsTerjemah.equals("Kecil")) {
+            txTerjemah.setTextSize(getResources().getDimension(R.dimen.textSizeSmall));
+            txFootnote.setTextSize(getResources().getDimension(R.dimen.textSizeSmall));
+            txTerjemahHead.setTextSize(getResources().getDimension(R.dimen.textSizeSmall));
+        } else if (prefsTerjemah.equals("Sedang")) {
+            txTerjemah.setTextSize(getResources().getDimension(R.dimen.textSizeMedium));
+            txFootnote.setTextSize(getResources().getDimension(R.dimen.textSizeMedium));
+            txTerjemahHead.setTextSize(getResources().getDimension(R.dimen.textSizeMedium));
+        } else if (prefsTerjemah.equals("Besar")) {
+            txTerjemah.setTextSize(getResources().getDimension(R.dimen.textSizeLarge));
+            txFootnote.setTextSize(getResources().getDimension(R.dimen.textSizeLarge));
+            txTerjemahHead.setTextSize(getResources().getDimension(R.dimen.textSizeLarge));
+        }
+
+        if (prefsSyarah.equals("Kecil")) {
+            txSyarah.setTextSize(getResources().getDimension(R.dimen.textSizeSmall));
+            txSyarahHead.setTextSize(getResources().getDimension(R.dimen.textSizeSmall));
+        } else if (prefsSyarah.equals("Sedang")) {
+            txSyarah.setTextSize(getResources().getDimension(R.dimen.textSizeMedium));
+            txSyarahHead.setTextSize(getResources().getDimension(R.dimen.textSizeMedium));
+        } else if (prefsSyarah.equals("Besar")) {
+            txSyarah.setTextSize(getResources().getDimension(R.dimen.textSizeLarge));
+            txSyarahHead.setTextSize(getResources().getDimension(R.dimen.textSizeLarge));
+        }
+
     }
 
     @Override
