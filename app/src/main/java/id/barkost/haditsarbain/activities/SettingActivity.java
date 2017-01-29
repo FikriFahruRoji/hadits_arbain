@@ -27,9 +27,9 @@ public class SettingActivity extends PreferenceActivity implements SharedPrefere
         ListPreference editTextHadits = (ListPreference) findPreference(KEY_HADITS);
         ListPreference editTextTerjemah = (ListPreference) findPreference(KEY_TERJEMAH);
         ListPreference editTextSyarah = (ListPreference) findPreference(KEY_SYARAH);
-        editTextHadits.setSummary(sp.getString(KEY_HADITS, "Medium"));
-        editTextTerjemah.setSummary(sp.getString(KEY_TERJEMAH, "Medium"));
-        editTextSyarah.setSummary(sp.getString(KEY_SYARAH, "Medium"));
+        editTextHadits.setSummary(sp.getString(KEY_HADITS, "Sedang"));
+        editTextTerjemah.setSummary(sp.getString(KEY_TERJEMAH, "Sedang"));
+        editTextSyarah.setSummary(sp.getString(KEY_SYARAH, "Sedang"));
     }
 
 

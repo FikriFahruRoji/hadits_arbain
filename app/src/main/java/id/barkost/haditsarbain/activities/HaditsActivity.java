@@ -29,9 +29,6 @@ import id.barkost.haditsarbain.util.AppBarStateChangeListener;
 public class HaditsActivity extends AppCompatActivity {
 
     public static int ID = 0;
-    public static int TEXT_HADITS_SIZE;
-    public static int TEXT_TRANSLATE_SIZE;
-    public static int TEXT_SYARAH_SIZE;
 
     private int fav;
     private DatabaseHelper myDb;
@@ -56,7 +53,7 @@ public class HaditsActivity extends AppCompatActivity {
             @Override
             public void onStateChanged(AppBarLayout appBarLayout, State state) {
                 if (state.name().equals("COLLAPSED")) {
-                    collapsingtoolbarlayout.setTitle("Hadits ke - " + Integer.toString(ID + 1));
+                    collapsingtoolbarlayout.setTitle("Hadits ke - " + Integer.toString(ID));
                 } else if (state.name().equals("EXPANDED")) {
                     collapsingtoolbarlayout.setTitle("");
                 } else if (state.name().equals("IDLE")) {
@@ -153,7 +150,7 @@ public class HaditsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 mediaPlayer.seekTo(-1);
                 mediaPlayer.pause();
-                mediaPlay.setBackground(getResources().getDrawable(R.drawable.media_play));
+                mediaPlay.setBackground(getResources().getDrawable(R.drawable.button_media_play));
             }
         });
         mediaPlay = (Button) findViewById(R.id.btn_media_play);
@@ -162,10 +159,10 @@ public class HaditsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (mediaPlayer != null) {
                     if (mediaPlayer.isPlaying()) {
-                        mediaPlay.setBackground(getResources().getDrawable(R.drawable.media_play));
+                        mediaPlay.setBackground(getResources().getDrawable(R.drawable.button_media_play));
                         mediaPlayer.pause();
                     } else {
-                        mediaPlay.setBackground(getResources().getDrawable(R.drawable.media_pause));
+                        mediaPlay.setBackground(getResources().getDrawable(R.drawable.button_media_pause));
                         mediaPlayer.start();
                     }
                 }
@@ -212,10 +209,10 @@ public class HaditsActivity extends AppCompatActivity {
             txHaditsHead.setTextSize(getResources().getDimension(R.dimen.textSizeSmall));
         } else if (prefsHadits.equals("Sedang")) {
             txHadits.setTextSize(getResources().getDimension(R.dimen.textSizeMediumArabic));
-            txHaditsHead.setTextSize(getResources().getDimension(R.dimen.textSizeMedium));
+            txHaditsHead.setTextSize(getResources().getDimension(R.dimen.textSizeSmall));
         } else if (prefsHadits.equals("Besar")) {
             txHadits.setTextSize(getResources().getDimension(R.dimen.textSizeLargeArabic));
-            txHaditsHead.setTextSize(getResources().getDimension(R.dimen.textSizeLarge));
+            txHaditsHead.setTextSize(getResources().getDimension(R.dimen.textSizeMedium));
         }
 
         if (prefsTerjemah.equals("Kecil")) {
@@ -225,11 +222,11 @@ public class HaditsActivity extends AppCompatActivity {
         } else if (prefsTerjemah.equals("Sedang")) {
             txTerjemah.setTextSize(getResources().getDimension(R.dimen.textSizeMedium));
             txFootnote.setTextSize(getResources().getDimension(R.dimen.textSizeMedium));
-            txTerjemahHead.setTextSize(getResources().getDimension(R.dimen.textSizeMedium));
+            txTerjemahHead.setTextSize(getResources().getDimension(R.dimen.textSizeSmall));
         } else if (prefsTerjemah.equals("Besar")) {
             txTerjemah.setTextSize(getResources().getDimension(R.dimen.textSizeLarge));
             txFootnote.setTextSize(getResources().getDimension(R.dimen.textSizeLarge));
-            txTerjemahHead.setTextSize(getResources().getDimension(R.dimen.textSizeLarge));
+            txTerjemahHead.setTextSize(getResources().getDimension(R.dimen.textSizeMedium));
         }
 
         if (prefsSyarah.equals("Kecil")) {

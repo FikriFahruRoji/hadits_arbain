@@ -188,12 +188,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(Intent.ACTION_VIEW,
                         Uri.parse("http://play.google.com/store/apps/details?id=" + this.getPackageName())));
             }
-            
+
         } else if (id == R.id.action_about) {
 //            displaySharedPreferences();
 
             new LovelyStandardDialog(this)
-                    .setTopColorRes(R.color.colorPrimary)
                     .setButtonsColorRes(R.color.colorAccent)
                     .setIcon(R.mipmap.ic_launcher)
                     .setTitle(R.string.app_name)

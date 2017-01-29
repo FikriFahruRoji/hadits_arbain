@@ -80,7 +80,7 @@
                         android:layout_margin="20dp"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
-                        android:background="@drawable/media_play"/>
+                        android:background="@drawable/button_media_play"/>
 
                     <Button
                         android:id="@+id/btn_media_stop"
