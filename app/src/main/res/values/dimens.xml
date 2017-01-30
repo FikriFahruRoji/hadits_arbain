@@ -8,9 +8,9 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
-    <dimen name="textSizeSmall">15px</dimen>
-    <dimen name="textSizeMedium">20px</dimen>
-    <dimen name="textSizeLarge">25px</dimen>
+    <dimen name="textSizeSmall">12px</dimen>
+    <dimen name="textSizeMedium">17px</dimen>
+    <dimen name="textSizeLarge">22px</dimen>
 
     <dimen name="textSizeSmallArabic">20px</dimen>
     <dimen name="textSizeMediumArabic">25px</dimen>

@@ -22,6 +22,9 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import id.barkost.haditsarbain.R;
 import id.barkost.haditsarbain.dbHelper.DatabaseHelper;
 import id.barkost.haditsarbain.util.AppBarStateChangeListener;
@@ -38,6 +41,8 @@ public class HaditsActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private MediaPlayer mediaPlayer;
 
+    private AdView mAdView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +50,12 @@ public class HaditsActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
+
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder()
+                .build();
+        mAdView.loadAd(adRequest);
+
 
         AppBarLayout appbarLayout = (AppBarLayout) findViewById(R.id.app_bar_layout);
         final CollapsingToolbarLayout collapsingtoolbarlayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
@@ -234,10 +245,10 @@ public class HaditsActivity extends AppCompatActivity {
             txSyarahHead.setTextSize(getResources().getDimension(R.dimen.textSizeSmall));
         } else if (prefsSyarah.equals("Sedang")) {
             txSyarah.setTextSize(getResources().getDimension(R.dimen.textSizeMedium));
-            txSyarahHead.setTextSize(getResources().getDimension(R.dimen.textSizeMedium));
+            txSyarahHead.setTextSize(getResources().getDimension(R.dimen.textSizeSmall));
         } else if (prefsSyarah.equals("Besar")) {
             txSyarah.setTextSize(getResources().getDimension(R.dimen.textSizeLarge));
-            txSyarahHead.setTextSize(getResources().getDimension(R.dimen.textSizeLarge));
+            txSyarahHead.setTextSize(getResources().getDimension(R.dimen.textSizeMedium));
         }
 
     }

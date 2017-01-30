@@ -19,8 +19,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.yarolegovich.lovelydialog.LovelyStandardDialog;
 
 import java.util.ArrayList;
@@ -43,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
 
     private DatabaseHelper myDB;
 
+    private AdView mAdView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +53,11 @@ public class MainActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
+
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder()
+                .build();
+        mAdView.loadAd(adRequest);
 
         AppBarLayout appbarLayout = (AppBarLayout) findViewById(R.id.app_bar_layout);
         final CollapsingToolbarLayout collapsingtoolbarlayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
@@ -80,49 +88,11 @@ public class MainActivity extends AppCompatActivity {
             String[] terjemah_hadits = res.getStringArray(R.array.terjemah_hadits);
             String[] rowi_hadits = res.getStringArray(R.array.footnote_hadits);
             String[] syarah = res.getStringArray(R.array.faidah_hadits);
-            int[] media = {
-                    R.raw.al_falaq,
-                    R.raw.al_falaq,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
-                    R.raw.an_naas,
+            int[] media = { R.raw.hadits1, R.raw.hadits2, R.raw.hadits3, R.raw.hadits4, R.raw.hadits5, R.raw.hadits6, R.raw.hadits7, R.raw.hadits8, R.raw.hadits9, R.raw.hadits10,
+                    R.raw.hadits11, R.raw.hadits12, R.raw.hadits13, R.raw.hadits14, R.raw.hadits15, R.raw.hadits16, R.raw.hadits17, R.raw.hadits18, R.raw.hadits19, R.raw.hadits20,
+                    R.raw.hadits21, R.raw.hadits22, R.raw.hadits23, R.raw.hadits24, R.raw.hadits25, R.raw.hadits26, R.raw.hadits27, R.raw.hadits28, R.raw.hadits29, R.raw.hadits30,
+                    R.raw.hadits31, R.raw.hadits32, R.raw.hadits33, R.raw.hadits34, R.raw.hadits35, R.raw.hadits36, R.raw.hadits37, R.raw.hadits38, R.raw.hadits39, R.raw.hadits40,
+                    R.raw.hadits41, R.raw.hadits42
             };
             int Length = id.length;
             for (int i = 0; i < Length; i++) {
@@ -190,31 +160,15 @@ public class MainActivity extends AppCompatActivity {
             }
 
         } else if (id == R.id.action_about) {
-//            displaySharedPreferences();
-
             new LovelyStandardDialog(this)
                     .setButtonsColorRes(R.color.colorAccent)
                     .setIcon(R.mipmap.ic_launcher)
                     .setTitle(R.string.app_name)
-                    .setMessage("kjhckjsdhk")
+                    .setMessage(R.string.app_about)
                     .setPositiveButton(android.R.string.ok, null)
                     .show();
         }
 
         return super.onOptionsItemSelected(item);
     }
-
-//    private void displaySharedPreferences() {
-//        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
-//        String prefsHadits = prefs.getString("pref_hadits", "Sedang");
-//        String prefsTerjemah = prefs.getString("pref_terjemah", "Sedang");
-//        String prefsSyarah = prefs.getString("pref_syarah", "Sedang");
-//
-//        StringBuilder builder = new StringBuilder();
-//        builder.append(prefsHadits + "\n");
-//        builder.append(prefsTerjemah + "\n");
-//        builder.append(prefsSyarah);
-//
-//        Toast.makeText(this, builder, Toast.LENGTH_SHORT).show();
-//    }
 }
