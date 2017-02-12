@@ -15,4 +15,8 @@
     <dimen name="textSizeSmallArabic">17px</dimen>
     <dimen name="textSizeMediumArabic">22px</dimen>
     <dimen name="textSizeLargeArabic">27px</dimen>
+    <dimen name="collapsing_height">200dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="text_17">17dp</dimen>
 </resources>

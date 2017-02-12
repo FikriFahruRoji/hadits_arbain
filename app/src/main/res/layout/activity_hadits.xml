@@ -17,7 +17,7 @@
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/collapsing_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="@dimen/collapsing_height"
             android:fitsSystemWindows="true"
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
@@ -37,7 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|bottom"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="@dimen/margin_20"
                 android:orientation="vertical">
 
                 <TextView
@@ -45,7 +45,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="5dp"
+                    android:layout_marginBottom="@dimen/margin_5"
                     android:fontFamily="sans-serif"
                     android:text="Hadits Ke - 1"
                     android:textColor="@color/white"
@@ -60,7 +60,7 @@
                     android:gravity="center"
                     android:text="Proses Penciptaan Manusia dan Takdir yang Menyertainya"
                     android:textColor="@color/white"
-                    android:textSize="17dp" />
+                    android:textSize="@dimen/text_17" />
 
                 <LinearLayout
                     android:layout_gravity="center_horizontal"
@@ -70,30 +70,30 @@
 
                     <Button
                         android:id="@+id/btn_media_prev"
-                        android:layout_margin="20dp"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:layout_margin="@dimen/margin_20"
+                        android:layout_width="@dimen/margin_20"
+                        android:layout_height="@dimen/margin_20"
                         android:background="@drawable/button_media_previous"/>
 
                     <Button
                         android:id="@+id/btn_media_play"
-                        android:layout_margin="20dp"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:layout_margin="@dimen/margin_20"
+                        android:layout_width="@dimen/margin_20"
+                        android:layout_height="@dimen/margin_20"
                         android:background="@drawable/button_media_play"/>
 
                     <Button
                         android:id="@+id/btn_media_stop"
-                        android:layout_margin="20dp"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:layout_margin="@dimen/margin_20"
+                        android:layout_width="@dimen/margin_20"
+                        android:layout_height="@dimen/margin_20"
                         android:background="@drawable/button_media_stop"/>
 
                     <Button
                         android:id="@+id/btn_media_next"
-                        android:layout_margin="20dp"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
+                        android:layout_margin="@dimen/margin_20"
+                        android:layout_width="@dimen/margin_20"
+                        android:layout_height="@dimen/margin_20"
                         android:background="@drawable/button_media_next"/>
 
                 </LinearLayout>
