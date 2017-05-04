@@ -8,13 +8,18 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
+    <dimen name="textSizeExtraSmall">11px</dimen>
     <dimen name="textSizeSmall">14px</dimen>
     <dimen name="textSizeMedium">17px</dimen>
     <dimen name="textSizeLarge">20px</dimen>
+    <dimen name="textSizeExtraLarge">23px</dimen>
 
+    <dimen name="textSizeExtraSmallArabic">14px</dimen>
     <dimen name="textSizeSmallArabic">17px</dimen>
     <dimen name="textSizeMediumArabic">22px</dimen>
     <dimen name="textSizeLargeArabic">27px</dimen>
+    <dimen name="textSizeExtraLargeArabic">30px</dimen>
+
     <dimen name="collapsing_height">200dp</dimen>
     <dimen name="margin_20">20dp</dimen>
     <dimen name="margin_5">5dp</dimen>

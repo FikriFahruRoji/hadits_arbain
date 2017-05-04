@@ -23,11 +23,10 @@ public class SettingActivity extends PreferenceActivity implements SharedPrefere
         ListPreference editTextHadits = (ListPreference) findPreference(KEY_HADITS);
         ListPreference editTextTerjemah = (ListPreference) findPreference(KEY_TERJEMAH);
         ListPreference editTextSyarah = (ListPreference) findPreference(KEY_SYARAH);
-        editTextHadits.setSummary(sp.getString(KEY_HADITS, "Sedang"));
-        editTextTerjemah.setSummary(sp.getString(KEY_TERJEMAH, "Sedang"));
-        editTextSyarah.setSummary(sp.getString(KEY_SYARAH, "Sedang"));
+        editTextHadits.setSummary(sp.getString(KEY_HADITS, getResources().getStringArray(R.array.listTextSize)[2]));
+        editTextTerjemah.setSummary(sp.getString(KEY_TERJEMAH, getResources().getStringArray(R.array.listTextSize)[2]));
+        editTextSyarah.setSummary(sp.getString(KEY_SYARAH, getResources().getStringArray(R.array.listTextSize)[2]));
     }
-
 
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
         if (key.equals(KEY_HADITS)) {

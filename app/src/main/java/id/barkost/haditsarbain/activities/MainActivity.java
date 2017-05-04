@@ -178,8 +178,8 @@ public class MainActivity extends AppCompatActivity {
             new LovelyStandardDialog(this)
                     .setButtonsColorRes(R.color.colorAccent)
                     .setIcon(R.mipmap.ic_launcher)
-                    .setTitle(R.string.app_name)
-                    .setMessage(R.string.app_version + "\n" + R.string.app_about)
+                    .setTitle(getString(R.string.app_name))
+                    .setMessage(getString(R.string.app_version) + "\n" + getString(R.string.app_about))
                     .setPositiveButton(android.R.string.ok, null)
                     .show();
         }

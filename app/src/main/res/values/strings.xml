@@ -788,9 +788,11 @@
     </string-array>
 
     <string-array name="listTextSize">
+        <item>Sangat Kecil</item>
         <item>Kecil</item>
         <item>Sedang</item>
         <item>Besar</item>
+        <item>Sangat Besar</item>
     </string-array>
 
 </resources>

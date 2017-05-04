@@ -200,19 +200,25 @@ public class HaditsActivity extends AppCompatActivity {
 
     public void setTextSize() {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(HaditsActivity.this);
-        String prefsHadits = prefs.getString("pref_hadits", "Sedang");
-        String prefsTerjemah = prefs.getString("pref_terjemah", "Sedang");
-        String prefsSyarah = prefs.getString("pref_syarah", "Sedang");
+        String prefsHadits = prefs.getString("pref_hadits", getResources().getStringArray(R.array.listTextSize)[2]);
+        String prefsTerjemah = prefs.getString("pref_terjemah", getResources().getStringArray(R.array.listTextSize)[2]);
+        String prefsSyarah = prefs.getString("pref_syarah", getResources().getStringArray(R.array.listTextSize)[2]);
 
-        if (prefsHadits.equals("Kecil")) {
+        if (prefsHadits.equals(getResources().getStringArray(R.array.listTextSize)[0])) {
+            txHadits.setTextSize(getResources().getDimension(R.dimen.textSizeExtraSmallArabic));
+            txHaditsHead.setTextSize(getResources().getDimension(R.dimen.textSizeExtraSmall));
+        } else if (prefsHadits.equals(getResources().getStringArray(R.array.listTextSize)[1])) {
             txHadits.setTextSize(getResources().getDimension(R.dimen.textSizeSmallArabic));
             txHaditsHead.setTextSize(getResources().getDimension(R.dimen.textSizeSmall));
-        } else if (prefsHadits.equals("Sedang")) {
+        } else if (prefsHadits.equals(getResources().getStringArray(R.array.listTextSize)[2])) {
             txHadits.setTextSize(getResources().getDimension(R.dimen.textSizeMediumArabic));
             txHaditsHead.setTextSize(getResources().getDimension(R.dimen.textSizeSmall));
-        } else if (prefsHadits.equals("Besar")) {
+        } else if (prefsHadits.equals(getResources().getStringArray(R.array.listTextSize)[3])) {
             txHadits.setTextSize(getResources().getDimension(R.dimen.textSizeLargeArabic));
             txHaditsHead.setTextSize(getResources().getDimension(R.dimen.textSizeMedium));
+        } else if (prefsHadits.equals(getResources().getStringArray(R.array.listTextSize)[4])) {
+            txHadits.setTextSize(getResources().getDimension(R.dimen.textSizeExtraLargeArabic));
+            txHaditsHead.setTextSize(getResources().getDimension(R.dimen.textSizeLarge));
         }
 
         if (prefsTerjemah.equals("Kecil")) {
