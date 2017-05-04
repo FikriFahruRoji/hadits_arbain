@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Typeface;
 import android.media.MediaPlayer;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
@@ -150,7 +151,9 @@ public class HaditsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 mediaPlayer.seekTo(-1);
                 mediaPlayer.pause();
-                mediaPlay.setBackground(getResources().getDrawable(R.drawable.button_media_play));
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                    mediaPlay.setBackground(getResources().getDrawable(R.drawable.button_media_play));
+                }
             }
         });
         mediaPlay = (Button) findViewById(R.id.btn_media_play);
@@ -159,10 +162,14 @@ public class HaditsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (mediaPlayer != null) {
                     if (mediaPlayer.isPlaying()) {
-                        mediaPlay.setBackground(getResources().getDrawable(R.drawable.button_media_play));
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                            mediaPlay.setBackground(getResources().getDrawable(R.drawable.button_media_play));
+                        }
                         mediaPlayer.pause();
                     } else {
-                        mediaPlay.setBackground(getResources().getDrawable(R.drawable.button_media_pause));
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                            mediaPlay.setBackground(getResources().getDrawable(R.drawable.button_media_pause));
+                        }
                         mediaPlayer.start();
                     }
                 }
@@ -221,31 +228,44 @@ public class HaditsActivity extends AppCompatActivity {
             txHaditsHead.setTextSize(getResources().getDimension(R.dimen.textSizeLarge));
         }
 
-        if (prefsTerjemah.equals("Kecil")) {
+        if (prefsTerjemah.equals(getResources().getStringArray(R.array.listTextSize)[0])) {
+            txTerjemah.setTextSize(getResources().getDimension(R.dimen.textSizeExtraSmall));
+            txFootnote.setTextSize(getResources().getDimension(R.dimen.textSizeExtraSmall));
+            txTerjemahHead.setTextSize(getResources().getDimension(R.dimen.textSizeExtraSmall));
+        } else if (prefsTerjemah.equals(getResources().getStringArray(R.array.listTextSize)[1])) {
             txTerjemah.setTextSize(getResources().getDimension(R.dimen.textSizeSmall));
             txFootnote.setTextSize(getResources().getDimension(R.dimen.textSizeSmall));
             txTerjemahHead.setTextSize(getResources().getDimension(R.dimen.textSizeSmall));
-        } else if (prefsTerjemah.equals("Sedang")) {
+        } else if (prefsTerjemah.equals(getResources().getStringArray(R.array.listTextSize)[2])) {
             txTerjemah.setTextSize(getResources().getDimension(R.dimen.textSizeMedium));
             txFootnote.setTextSize(getResources().getDimension(R.dimen.textSizeMedium));
             txTerjemahHead.setTextSize(getResources().getDimension(R.dimen.textSizeSmall));
-        } else if (prefsTerjemah.equals("Besar")) {
+        } else if (prefsTerjemah.equals(getResources().getStringArray(R.array.listTextSize)[3])) {
             txTerjemah.setTextSize(getResources().getDimension(R.dimen.textSizeLarge));
             txFootnote.setTextSize(getResources().getDimension(R.dimen.textSizeLarge));
             txTerjemahHead.setTextSize(getResources().getDimension(R.dimen.textSizeMedium));
+        } else if (prefsTerjemah.equals(getResources().getStringArray(R.array.listTextSize)[4])) {
+            txTerjemah.setTextSize(getResources().getDimension(R.dimen.textSizeExtraLarge));
+            txFootnote.setTextSize(getResources().getDimension(R.dimen.textSizeExtraLarge));
+            txTerjemahHead.setTextSize(getResources().getDimension(R.dimen.textSizeLarge));
         }
 
-        if (prefsSyarah.equals("Kecil")) {
+        if (prefsSyarah.equals(getResources().getStringArray(R.array.listTextSize)[0])) {
+            txSyarah.setTextSize(getResources().getDimension(R.dimen.textSizeExtraSmall));
+            txSyarahHead.setTextSize(getResources().getDimension(R.dimen.textSizeExtraSmall));
+        } else if (prefsSyarah.equals(getResources().getStringArray(R.array.listTextSize)[1])) {
             txSyarah.setTextSize(getResources().getDimension(R.dimen.textSizeSmall));
             txSyarahHead.setTextSize(getResources().getDimension(R.dimen.textSizeSmall));
-        } else if (prefsSyarah.equals("Sedang")) {
+        } else if (prefsSyarah.equals(getResources().getStringArray(R.array.listTextSize)[2])) {
             txSyarah.setTextSize(getResources().getDimension(R.dimen.textSizeMedium));
             txSyarahHead.setTextSize(getResources().getDimension(R.dimen.textSizeSmall));
-        } else if (prefsSyarah.equals("Besar")) {
+        } else if (prefsSyarah.equals(getResources().getStringArray(R.array.listTextSize)[3])) {
             txSyarah.setTextSize(getResources().getDimension(R.dimen.textSizeLarge));
             txSyarahHead.setTextSize(getResources().getDimension(R.dimen.textSizeMedium));
+        } else if (prefsSyarah.equals(getResources().getStringArray(R.array.listTextSize)[4])) {
+            txSyarah.setTextSize(getResources().getDimension(R.dimen.textSizeExtraLarge));
+            txSyarahHead.setTextSize(getResources().getDimension(R.dimen.textSizeLarge));
         }
-
     }
 
     @Override
