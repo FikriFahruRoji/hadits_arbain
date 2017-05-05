@@ -1,14 +1,7 @@
 <resources>
     <string name="app_name">Hadits Arba\'in An-Nawawi</string>
     <string name="app_version">Versi : 0.1</string>
-    <string name="app_about">
-        Sumber rujukan :\n
-        Kitab : Hadist Arba\'in Nawawiyah karya Imam Nawawi\n
-        Penterjemah: Abdullah Haidar\n
-        Editor: Erwandi Tirmizi - Mohammad Muinuddin Bashri\n
-        Terbitan: Maktab Dakwah Dan Bimbingan Jaliyat Rabwah\n
-        Link sumber : https://islamhouse.com/id/books/1617
-    </string>
+    <string name="app_about">Sumber rujukan :\nKitab : Hadist Arba\'in Nawawiyah karya Imam Nawawi\nPenterjemah : Abdullah Haidar\nEditor: Erwandi Tirmizi - Mohammad Muinuddin Bashri\nTerbitan: Maktab Dakwah Dan Bimbingan Jaliyat Rabwah\nLink sumber : https://islamhouse.com/id/books/1617\nAudio : Syaikh Mishary Rashid Al-Afasy</string>
 
     <string name="banner_home_footer">ca-app-pub-8120927785000028/5329365192</string>
     <string name="ads_full">ca-app-pub-8120927785000028/1780469596 </string>
