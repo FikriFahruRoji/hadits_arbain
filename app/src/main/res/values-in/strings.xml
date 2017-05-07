@@ -20,6 +20,7 @@
     <string name="faedah">Faedah Hadits :</string>
     <string name="syarah">Syarah :</string>
     <string name="exit">Keluar dari aplikasi?</string>
+    <string name="hadits_ke">Hadits ke - </string>
 
     <string-array name="id">
         <item>1</item>

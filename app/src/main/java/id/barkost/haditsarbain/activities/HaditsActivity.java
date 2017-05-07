@@ -194,7 +194,7 @@ public class HaditsActivity extends AppCompatActivity {
             return;
         }
         while (menu.moveToNext()) {
-            txNo.setText(Html.fromHtml("Hadits ke - " + Integer.toString(menu.getInt(0))));
+            txNo.setText(Html.fromHtml(getResources().getString(R.string.hadits_ke) + Integer.toString(menu.getInt(0))));
             txLatin.setText(Html.fromHtml(menu.getString(1)));
             txHadits.setText(Html.fromHtml(menu.getString(3)));
             txTerjemah.setText(Html.fromHtml(menu.getString(4)));

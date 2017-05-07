@@ -26,6 +26,7 @@
     <string name="faedah">Syarah Hadith :</string>
     <string name="syarah">Syarah :</string>
     <string name="exit">Exit?</string>
+    <string name="hadits_ke">Hadith number </string>
 
     <string-array name="id">
         <item>1</item>
@@ -73,53 +74,48 @@
     </string-array>
 
     <string-array name="judul_latin">
-        <item>Actions are by intentions</item>
-        <item>Islam, Iman, Ihsan</item>
-        <item>Islam is Built Upon Five</item>
-        <item>Deeds are by Their Final Actions</item>
-        <item>Rejection of Evil Deeds and Innovations</item>
-        <item>Protecting the Heart</item>
-        <item>The Religion is Naseehah (Sincere Advice)</item>
-        <item>The Sanctity of a Muslim</item>
-        <item>Obligations are According to Ability</item>
-        <item>Restricting Oneself to the Permissible</item>
-
-        <item>Being Cautious of the Doubtful</item>
-        <item>Leaving that Which Does Not Concern You</item>
-        <item>Love for Your Brother What You Love for Yourself</item>
-        <item>Prohibition of Blood of a Muslim</item>
-        <item>Islamic Manners</item>
-        <item>The Forbiddance of Anger</item>
-        <item>Prescription of Ihsan (Perfection)</item>
-        <item>Follow Up a Bad Deed with a Good Deed</item>
-        <item>Be Mindful of Allah and Allah will Protect You</item>
-        <item>The Feeling of Shame</item>
-
-        <item>Say \'I believe in Allah\' and then be Steadfast</item>
-        <item>Entering Paradise</item>
-        <item>Hastening to Do Good</item>
-        <item>The Forbiddance of Oppression</item>
-        <item>The Value of Charity</item>
-        <item>The Virtue of Reconciling between People</item>
-        <item>Righteousness is in Good Character</item>
-        <item>The Obligation of Following the Sunnah</item>
-        <item>Means of Goodness</item>
-        <item>Do Not Neglect the Religious Obligations</item>
-
-        <item>The Reality of Asceticism</item>
-        <item>No Harming nor Reciprocating Harm</item>
-        <item>The Onus of Proof is on the Claimant and The Taking of an Oath is on the Denier</item>
-        <item>Changing Evil with the Hands, Speech, and Heart</item>
-        <item>The Sanctity of the Muslim</item>
-        <item>The Virtue of Gathering for the Remembrance of Allah</item>
-        <item>The Grace of Allah and His Mercy</item>
-        <item>Attaining Nearness to Allah and His Love</item>
-        <item>Leniency for the One who Errs, the One who Forgets, and the One who is Forced</item>
-        <item>Leniency for the One who Errs, the One who Forgets, and the One who is Forced</item>
-        <item></item>
-        <item>Be in This World As a Traveler</item>
-        <item>The World is the Means for Attaining the Hereafter</item>
-        <item>The Expanse of the Forgiveness of Allah</item>
+        <item>Intention</item>
+        <item>Foundations of the Sunnah</item>
+        <item>Pillars of Islam</item>
+        <item>Providence</item>
+        <item>Innovation</item>
+        <item>Lawful and Unlawful</item>
+        <item>Sincere Good Will</item>
+        <item>Defense of Islam</item>
+        <item>Avoid Excessive Questions</item>
+        <item>Allah is Pure</item>
+        <item>Leave Doubts</item>
+        <item>Minding Our Own Business</item>
+        <item>Love Your Brother</item>
+        <item>Legal Punishment</item>
+        <item>Good Manners</item>
+        <item>Do Not Get Angry</item>
+        <item>Excellence</item>
+        <item>Fear Allah Wherever You Are</item>
+        <item>Be Mindful of Allah</item>
+        <item>Shame and Modesty</item>
+        <item>Steadfastness</item>
+        <item>Essentials of Salvation</item>
+        <item>Purification is Half of Faith</item>
+        <item>Oppression</item>
+        <item>Many Ways to Give Charity</item>
+        <item>Deeds of Charity</item>
+        <item>Righteousness</item>
+        <item>Upholding the Sunnah</item>
+        <item>Virtuous Deeds</item>
+        <item>Duties and Limits</item>
+        <item>Renounce the World</item>
+        <item>No Harm</item>
+        <item>Burden of Proof</item>
+        <item>Enjoining Good and Forbidding Evil</item>
+        <item>Brotherhood</item>
+        <item>Help Your Brother</item>
+        <item>Recording of Good and Bad Deeds</item>
+        <item>Loyal Friends of Allah</item>
+        <item>Pardon for Mistakes</item>
+        <item>Be in the World as a Stranger</item>
+        <item>Desires and Islam</item>
+        <item>Repentance</item>
     </string-array>
 
     <string-array name="judul_arabic">
