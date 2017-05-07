@@ -1,32 +1,32 @@
 <resources>
-    <string name="app_name">Hadith Arba\'in An-Nawawi</string>
-    <string name="app_version">Version : 0.1</string>
+    <string name="app_name">Hadits Arba\'in An-Nawawi</string>
+    <string name="app_version">Versi : 0.1</string>
     <string name="app_about">
-        Referral source : \nKitab : Hadist Arba\'in Nawawiyah by Imam Nawawi \nTranslate : sunnah.com \nPublisher : Maktab Dakwah and Guidance Jaliyat Rabwah \nLink Source : goo.gl/tRdaAH \nAudio : Syaikh Mishary Rashid Al-Afasy
+        Sumber rujukan : \nKitab : Hadist Arba\'in Nawawiyah karya Imam Nawawi \nPenterjemah : Abdullah Haidar \nEditor : Erwandi Tirmizi - Mohammad Muinuddin Bashri \nTerbitan : Maktab Dakwah Dan Bimbingan Jaliyat Rabwah \nLink Sumber : goo.gl/tRdaAH \nAudio : Syaikh Mishary Rashid Al-Afasy
     </string>
 
     <string name="banner_home_footer">ca-app-pub-8120927785000028/5329365192</string>
     <string name="ads_full">ca-app-pub-8120927785000028/1780469596 </string>
 
-    <string name="action_settings">Setting</string>
-    <string name="action_about">About</string>
-    <string name="action_rate">Rate Me</string>
-    <string name="action_share">Share</string>
-    <string name="action_bookmark">Mark</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="action_about">Tentang</string>
+    <string name="action_rate">Beri Rating</string>
+    <string name="action_share">Bagikan</string>
+    <string name="action_bookmark">Tandai</string>
 
     <string name="title_activity_detail">Detail Activity</string>
     <string name="title_activity_hadits">Hadits Activity</string>
 
-    <string name="ok">Yes</string>
-    <string name="cancel">Cancel</string>
-    <string name="share">Share</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Batal</string>
+    <string name="share">Bagikan</string>
 
-    <string name="hadits">Hadith :</string>
-    <string name="terjemah">Translate :</string>
-    <string name="faedah">Syarah Hadith :</string>
+    <string name="hadits">Hadits :</string>
+    <string name="terjemah">Terjemah :</string>
+    <string name="faedah">Faedah Hadits :</string>
     <string name="syarah">Syarah :</string>
-    <string name="exit">Exit?</string>
-    <string name="hadits_ke">Hadith number </string>
+    <string name="exit">Keluar dari aplikasi?</string>
+    <string name="hadits_ke">Hadits ke - </string>
 
     <string-array name="id">
         <item>1</item>
@@ -74,48 +74,50 @@
     </string-array>
 
     <string-array name="judul_latin">
-        <item>Intention</item>
-        <item>Foundations of the Sunnah</item>
-        <item>Pillars of Islam</item>
-        <item>Providence</item>
-        <item>Innovation</item>
-        <item>Lawful and Unlawful</item>
-        <item>Sincere Good Will</item>
-        <item>Defense of Islam</item>
-        <item>Avoid Excessive Questions</item>
-        <item>Allah is Pure</item>
-        <item>Leave Doubts</item>
-        <item>Minding Our Own Business</item>
-        <item>Love Your Brother</item>
-        <item>Legal Punishment</item>
-        <item>Good Manners</item>
-        <item>Do Not Get Angry</item>
-        <item>Excellence</item>
-        <item>Fear Allah Wherever You Are</item>
-        <item>Be Mindful of Allah</item>
-        <item>Shame and Modesty</item>
-        <item>Steadfastness</item>
-        <item>Essentials of Salvation</item>
-        <item>Purification is Half of Faith</item>
-        <item>Oppression</item>
-        <item>Many Ways to Give Charity</item>
-        <item>Deeds of Charity</item>
-        <item>Righteousness</item>
-        <item>Upholding the Sunnah</item>
-        <item>Virtuous Deeds</item>
-        <item>Duties and Limits</item>
-        <item>Renounce the World</item>
-        <item>No Harm</item>
-        <item>Burden of Proof</item>
-        <item>Enjoining Good and Forbidding Evil</item>
-        <item>Brotherhood</item>
-        <item>Help Your Brother</item>
-        <item>Recording of Good and Bad Deeds</item>
-        <item>Loyal Friends of Allah</item>
-        <item>Pardon for Mistakes</item>
-        <item>Be in the World as a Stranger</item>
-        <item>Desires and Islam</item>
-        <item>Repentance</item>
+        <item>Amal Tergantung Niat</item>
+        <item>Pengertian Islam, Iman, dan Ihsan</item>
+        <item>Rukun Islam</item>
+        <item>Proses Penciptaan Manusia dan Takdir yang Menyertainya</item>
+        <item>Bahaya Bid\'ah</item>
+        <item>Halal dan Haram</item>
+        <item>Agama adalah Nasihat</item>
+        <item>Haram Darah Seorang Muslim</item>
+        <item>Menjalankan Perintah Semampunya</item>
+        <item>Meninggalkan yang Haram</item>
+        <item>Tinggalkan Apa yang Meragukan</item>
+        <item>Tinggalkan Apa yang Tidak Berguna</item>
+        <item>Di Antara Kesempurnaan Iman</item>
+        <item>Sebab-Sebab Darah Ditumpahkan</item>
+        <item>Di Antara Akhlak Seorang Mukmin</item>
+        <item>Jangan Marah</item>
+        <item>Berbuat Baik Atas Segala Sesuatu</item>
+        <item>Bertakwalah Kepada Allah</item>
+        <item>Jagalah Allah, Maka Dia akan Menjagamu</item>
+        <item>Malu Akhlak Para Nabi</item>
+        <item>Katakanlah, \"Aku beriman kepada Allah!\"</item>
+        <item>Amalan yang Memasukkan ke Surga</item>
+        <item>Setiap Manusia Berbuat</item>
+        <item>Janganlah Kalian Saling Menzhalimi</item>
+        <item>Setiap Kebaikan adalah Sedekah</item>
+        <item>Setiap Persendian Wajib Bersedekah</item>
+        <item>Kebaikan dan Dosa</item>
+        <item>Mendengar dan Ta\'at</item>
+        <item>Pintu-Pintu Kebaikan</item>
+        <item>Batasan-Batasan Allah</item>
+        <item>Buah Zuhud</item>
+        <item>Tidak Ada Bahaya dan Tidak Boleh Membahayakan</item>
+        <item>Bukti Wajib Bagi Penuntut</item>
+        <item>Merubah Kemungkaran</item>
+        <item>Hamba-Hamba Allah adalah Bersaudara</item>
+        <item>Keutamaan Akhlak dan Ilmu</item>
+        <item>Kebaikan dan Keburukan</item>
+        <item>Keutamaan Wali Allah</item>
+        <item>Tiga Hal yang Allah Maafkan</item>
+        <item>Hiduplah Laksana Musafir</item>
+        <item>Mengikuti Syariat adalah Tiang Keimanan</item>
+        <item>Luasnya Ampunan Allah</item>
+        <item>Mengikuti Syariat adalah Tiang Keimanan</item>
+        <item>Luasnya Ampunan Allah</item>
     </string-array>
 
     <string-array name="judul_arabic">
@@ -406,14 +408,14 @@
         <item>Shahih Muslim no 8</item>
         <item>Shahih Bukhari no 8, Shahih Muslim no 16</item>
         <item>Shahih Bukhari no 3208, Shahih Muslim no 2643</item>
-        <item>Shahih Bukhari no 2697, Shahih Muslim no 1718</item>
+        <item>Shahih Bukhari no 2697, Shahih Muslim no 1718. Dan dalam riwayat muslim disebutkan: siapa yang melakukan suatu perbuatan (ibadah) yang bukan urusan (agama) kami, maka dia tertolak</item>
         <item>Shahih Bukhari no 52, Shahih Muslim no 1599</item>
         <item>Shahih Muslim no 55</item>
         <item>Shahih Bukhari no 25, Shahih Muslim no 22</item>
         <item>Shahih Bukhari no 7288, Shahih Muslim no 1337</item>
         <item>Shahih Muslim no 1015</item>
 
-        <item>Sunan an-Nasa\'i no 5711 dan Tirmizi dan dia berkata, Haditsnya hasan shahih</item>
+        <item>At-Tirmizi no 2518 dan dia berkata, Haditsnya hasan shahih</item>
         <item>Hadith Hasan riwayat Tirmizi dan lainnya</item>
         <item>Shahih Bukhari no 13, Shahih Muslim no 45</item>
         <item>Shahih Bukhari no 6878, Shahih Muslim no 1676</item>
