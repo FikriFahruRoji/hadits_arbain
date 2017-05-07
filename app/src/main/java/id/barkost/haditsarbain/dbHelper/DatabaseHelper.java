@@ -38,7 +38,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             colFav + " INT DEFAULT 0);";
 
     public DatabaseHelper(Context context) {
-        super(context, "arbain.db", null, 1);
+        super(context, "arbain.db", null, 2);
     }
 
     @Override

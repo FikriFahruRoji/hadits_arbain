@@ -80,8 +80,15 @@ public class MainActivity extends AppCompatActivity {
         myDB = new DatabaseHelper(this);
 
         SharedPreferences prefs = getPreferences(Context.MODE_PRIVATE);
+
+        if (prefs.getBoolean("first", true)) {
+            prefs.edit().putBoolean("first", false).commit();
+            prefs.edit().putBoolean("firstLaunch", true).commit();
+        }
+
         if (prefs.getBoolean("firstLaunch", true)) {
             prefs.edit().putBoolean("firstLaunch", false).commit();
+            myDB.delete();
             Resources res = getResources();
             String[] id = res.getStringArray(R.array.id);
             String[] judul_latin = res.getStringArray(R.array.judul_latin);
