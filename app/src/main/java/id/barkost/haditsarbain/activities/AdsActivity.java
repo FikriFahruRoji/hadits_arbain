@@ -39,8 +39,8 @@ public class AdsActivity extends AppCompatActivity {
             @Override
             public void onAdClosed() {
                 finish();
-                System.runFinalizersOnExit(true);
-                android.os.Process.killProcess(android.os.Process.myPid());
+//                System.runFinalizersOnExit(true);
+//                android.os.Process.killProcess(android.os.Process.myPid());
             }
         });
     }
@@ -54,7 +54,7 @@ public class AdsActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         finish();
-        System.runFinalizersOnExit(true);
-        android.os.Process.killProcess(android.os.Process.myPid());
+//        System.runFinalizersOnExit(true);
+//        android.os.Process.killProcess(android.os.Process.myPid());
     }
 }

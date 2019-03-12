@@ -148,10 +148,12 @@ public class MainActivity extends AppCompatActivity {
                 .setPositiveButton(getResources().getString(R.string.ok), new DialogInterface.OnClickListener() {
                     @SuppressWarnings("deprecation")
                     public void onClick(DialogInterface dialog,int id) {
-                        Intent i = new Intent(MainActivity.this, AdsActivity.class);
-                        i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        startActivity(i);
+//                        Intent i = new Intent(MainActivity.this, AdsActivity.class);
+//                        i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//                        startActivity(i);
                         finish();
+                        System.runFinalizersOnExit(true);
+                        android.os.Process.killProcess(android.os.Process.myPid());
                     }
                 })
                 .setNegativeButton(getResources().getString(R.string.cancel), null)
